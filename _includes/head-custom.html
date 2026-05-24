@@ -16,5 +16,8 @@ function getAge(birthDateStr) {
 }
 
 const age = getAge("2014-09-22");
-document.getElementById("age")?.textContent = age;
+const el = document.getElementById("age");
+if (el) {
+    el.textContent = age;
+}
 </script>

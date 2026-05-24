@@ -4,7 +4,7 @@
 
 Here are some stories I wrote. As traditional publishing is currently out of my reach, I decided on digital publishing.
 
-## Singles
+## Individual Works
 
 - [The Time Machine](The_Time_Machine.pdf): Ms. Monisha has been absent for FIVE DAYS STRAIGHT! Ms. Roberts says she's busy, but David isn't so sure. Find out with David as he and Ms. Monisha go through the times.
 

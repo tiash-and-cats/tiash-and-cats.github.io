@@ -16,7 +16,7 @@ If you got redirected from https://tiashfam.w3spaces.com/, then it's because tha
 
 All important stuff has been moved (for example, my now-defunct [blog](oldblog/), previously News, and my [stories](stories.md), previously Books).
 
-
+<p>
 <script>
 function getAge(birthDateStr) {
   const birthDate = new Date(birthDateStr);
@@ -37,3 +37,4 @@ function getAge(birthDateStr) {
 const age = getAge("2014-22-09");
 document.getElementById("age").textContent = age;
 </script>
+</p>

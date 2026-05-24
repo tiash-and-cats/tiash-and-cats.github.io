@@ -4,7 +4,7 @@
 
 <i>Feb 13, 2024 <small class="edited">edited May 23, 2025</small></i></h2>
 
-<p>I made a code editor! It's called Morsel, <a href='/sfy/?file=https://tiashdev.github.io/tiashfam-resources/sfy-examples/morsel.html'>and here is a sample.</a></p>
+<p>I made a code editor! It's called Morsel, <a href='https://tiashfam.w3spaces.com/sfy/?file=https://tiashdev.github.io/tiashfam-resources/sfy-examples/morsel.html'>and here is a sample.</a></p>
 <p>It's very nice, isn't it? The features are:</p>
 <ul>
   <li>Syntax highlighting</li>

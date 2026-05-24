@@ -1,8 +1,8 @@
-# I made my own programming language!
+# I made my own browser!
 
 {% include linktree.md %}
 
-<i>Apr 6, 2025</i>
+<i>May 22, 2025 <small class="edited">edited May 23, 2025</small></i>
 
 <p>It's called <strong>AirSquirrel</strong>, and you can install it by clicking 
    <a href="https://tiashdev.github.io/tiashfam-resources/AirSquirrel_Installer.exe" download>here</a>.

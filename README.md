@@ -4,7 +4,7 @@
 
 Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<span id="age"></span> year old) developer. This is my little spot in the web.
 
-I have many [projects](projects.md), such as an [image format](https://tiash-and-cats.github.io/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also written some [stories](stories.md).
+I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash-and-cats.github.io/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also written some [stories](/stories/).
 
 ## Why did I get redirected here?
 

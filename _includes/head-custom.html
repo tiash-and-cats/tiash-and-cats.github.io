@@ -15,9 +15,11 @@ function getAge(birthDateStr) {
   return age;
 }
 
-const age = getAge("2014-09-22");
-const el = document.getElementById("age");
-if (el) {
+document.addEventListener("DOMContentLoaded", () => {
+  const age = getAge("2014-09-22");
+  const el = document.getElementById("age");
+  if (el) {
     el.textContent = age;
+  }
 }
 </script>

@@ -15,26 +15,3 @@ If you got redirected from https://tiashfam.w3spaces.com/, then it's because tha
 3. It also has a limit on how many files your site can have.
 
 All important stuff has been moved (for example, my now-defunct [blog](oldblog/), previously News, and my [stories](stories.md), previously Books).
-
-{% raw %}
-<script>
-function getAge(birthDateStr) {
-  const birthDate = new Date(birthDateStr);
-  const today = new Date();
-
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const hasHadBirthdayThisYear =
-    today.getMonth() > birthDate.getMonth() ||
-    (today.getMonth() === birthDate.getMonth() &&
-     today.getDate() >= birthDate.getDate());
-
-  if (!hasHadBirthdayThisYear) {
-    age--;
-  }
-  return age;
-}
-
-const age = getAge("2014-22-09");
-document.getElementById("age").textContent = age;
-</script>
-{% endraw %}

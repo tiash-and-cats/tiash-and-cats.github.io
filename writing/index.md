@@ -6,7 +6,8 @@ Here are some things I wrote. As traditional publishing is currently out of my r
 
 ## Memorials and biographies
 
-- [The life of Dholu and Kalu](the-life-of-dholu-and-kalu.md): A biography and memorial of Dholu and Kalu, two dogs who shaped our lives in Lalmatia.
+- [The life of Dholu and Kalu](the-life-of-dholu-and-kalu.md): The biography and memorial of Dholu and Kalu, two dogs who shaped our lives in Lalmatia.
+- [Bingsu's days](bingsu-bio.md): The biography and memorial of Bingsu, a kitten who will be remembered for years to come.
 
 ## Stories
 

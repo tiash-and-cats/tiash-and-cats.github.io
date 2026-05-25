@@ -12,19 +12,19 @@ My mother found her in the garage when she was two months old. Bingsu was so blo
 
 She was quickly taken indoors and cleaned up.
 
-A few weeks later, she was diagnosed with FIP. For a few long weeks, she was given saline through a cannula. But she got better.
+A few weeks later, she was diagnosed with FIP. For a few long weeks, she was given medication through a cannula. But she got better.
 
 ## Happy days
 
 She was the most playful, lively, happy, but spicy kitten ever. She had skin infections from time to time, but she still pushed forward. My female cats (I have 2) didn't like her that much, but my male cat did.
 
-![Bingsu, at 3 months old!](bingsu-3-months.jpg)
+<img src="bingsu-3-months.jpg" alt="Bingsu, at 3 months old!" title="Bingsu, at 3 months old!" width="400" height="300">
 
 She stayed this way until a few weeks before her death.
 
-<video controls width="600">
+<video controls width="600" title="Bingsu, at 6 months old, just before her final chapter. She's lively and playful, biting my mother's finger as she plays with her.">
   <source src="bingsu-6-months.mp4" type="video/mp4">
-  <em>[Video] Bingsu, at 6 months old, just before her final chapter. She's lively and playful, biting my mother's finger as she plays with her.</em>
+  <em>[Video] Bingsu, at 6 months old</em>
 </video>
 
 ## Last chapter

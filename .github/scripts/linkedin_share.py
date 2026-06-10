@@ -50,29 +50,23 @@ permalink = f"{SITE_URL}/{post_date_path}/{title_part}.html"
 formatted_text = f"{title}\n\n{description}\n\nRead it here: {permalink}"
 
 # execute LinkedIn REST API Request
-url = "https://api.linkedin.com/v2/ugcPosts"
+url = "https://api.linkedin.com/rest/posts"
+
 headers = {
     "Authorization": f"Bearer {ACCESS_TOKEN}",
-    "LinkedIn-Version": "202605",
+    "LinkedIn-Version": "202605",          # Crucial: Forces modern parsing engines
     "X-Restli-Protocol-Version": "2.0.0",
     "Content-Type": "application/json",
 }
 
 payload = {
-    "author": AUTHOR_URN,
+    "author": AUTHOR_URN,                  # Cleaned alpha-numeric URN
+    "commentary": formatted_text,
+    "visibility": "PUBLIC",
+    "distribution": {"feedDistribution": "MAIN_FEED"},
     "lifecycleState": "PUBLISHED",
-    "specificContent": {
-        "com.linkedin.ugc.ShareContent": {
-            "shareCommentary": {
-                "text": formatted_text,
-            },
-            "shareMediaCategory": "NONE"
-        }
-    },
-    "visibility": {
-        "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC",
-    }
 }
+
 
 response = requests.post(url, headers=headers, json=payload)
 

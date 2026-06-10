@@ -14,21 +14,24 @@
       <!-- custom default layout structure -->
       <article>
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
-          <h1>{{ page.title }}</h1>
           {% include linktree.html %}
           
-          <!-- Automatically renders if the page configuration has a date -->
+          <!-- automatically renders if the page configuration has a date -->
           {% if page.date %}
             <p><em><time datetime="{{ page.date | date_to_xmlschema }}">
               Published on {{ page.date | date: "%B %d, %Y" }}
             </time></em></p>
           {% endif %}
 
-          <!-- Automatically renders if the page configuration has tags -->
+          <!-- automatically renders if the page configuration has tags -->
           {% if page.tags %}
             <p><em>Tags: {{ page.tags | join: ", " }}</em></p>
           {% endif %}
         </header>
+        
+        {% if page.show_title %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
 
         <div class="content">
           {{ content }}

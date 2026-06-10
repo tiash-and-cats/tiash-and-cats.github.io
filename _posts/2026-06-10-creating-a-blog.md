@@ -1,5 +1,6 @@
 ---
 title: Creating a blog
+show_title: true
 tags: programming python jekyll github linkedin api secrets
 post2lnkdin: false
 ---

@@ -74,7 +74,7 @@ jobs:
             # Executes the post evaluation script
             - name: Run Auto-Posting Script
               env:
-                  LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+                  LNKDIN_ACCESS_TOKEN: ${{ secrets.LNKDIN_ACCESS_TOKEN }}
               run: python .github/scripts/linkedin_share.py
   
             # Automatically commits the updated Markdown frontmatter back to master

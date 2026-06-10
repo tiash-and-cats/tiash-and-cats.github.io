@@ -1,5 +1,5 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+# Deloys to GitHub Pages before posting the latest blog to LinkedIn
+name: publish to GitHub Pages + LinkedIn
 
 on:
     # Runs on pushes targeting the default branch

@@ -22,3 +22,7 @@ Firstly, I had to create an LinkedIn app. To do that, I went to [LinkedIn Develo
 Then I wrote a Python script called `linkedin_secrets.py`. It uses the "Sign In with LinkedIn using OpenID Connect" product to sign in to your account. It then gets an access token which must be saved securely and the user's URN (Uniform Resource Names, basically an ID LinkedIn gives to your account) which is saved to a file. I logged in so that it could post using my account.
 
 I wrote another Python script called `.github/scripts/linkedin_share.py`, which takes the latest blog post and posts the post's title, description (first paragraph), and link to LinkedIn.
+
+## What did I learn?
+
+I learnt that using LinkedIn's API is harder than I thought! There's versioned and unversioned APIs, which have different behaviours, and so on and so forth. I also learnt that GitHub Actions workflows are quite easy.

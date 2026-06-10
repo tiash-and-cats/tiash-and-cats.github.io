@@ -1,6 +1,6 @@
 # The life of Dholu and Kalu
 
-{% include linktree.md %}
+
 
 > *In loving memory of Kalu (~2000-2026). He brought so much love into our lives.*
 

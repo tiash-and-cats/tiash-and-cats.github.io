@@ -11,7 +11,7 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment and committing changes
 permissions:
-    contents: write      # Elevated from 'read' so the script can commit back to front matter
+    contents: write
     pages: write
     id-token: write
 

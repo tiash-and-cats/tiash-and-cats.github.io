@@ -1,6 +1,6 @@
 # Writings
 
-{% include linktree.md %}
+
 
 Here are some things I wrote. As traditional publishing is currently out of my reach, I decided on digital publishing.
 

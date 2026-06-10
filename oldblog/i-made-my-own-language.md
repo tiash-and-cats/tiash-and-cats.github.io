@@ -1,7 +1,5 @@
 # I made my own programming language!
 
-{% include linktree.md %}
-
 <i>Apr 6, 2025</i>
 
 > *May 25th, 2026*

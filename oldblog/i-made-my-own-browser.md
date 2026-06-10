@@ -1,7 +1,5 @@
 # I made my own browser!
 
-{% include linktree.md %}
-
 <i>May 22, 2025 <small class="edited">edited May 23, 2025</small></i>
 
 <p>It's called <strong>AirSquirrel</strong>, and you can install it by clicking 

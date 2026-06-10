@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <!-- custom default layout structure -->
+      <article>
+        <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
+          <h1>{{ page.title }}</h1>
+          {% include linktree.md %}
+          
+          <!-- Automatically renders if the page configuration has a date -->
+          {% if page.date %}
+            <p><em><time datetime="{{ page.date | date_to_xmlschema }}">
+              Published on {{ page.date | date: "%B %d, %Y" }}
+            </time></em></p>
+          {% endif %}
+
+          <!-- Automatically renders if the page configuration has tags -->
+          {% if page.tags %}
+            <p><em>Tags: {{ page.tags | join: ", " }}</em></p>
+          {% endif %}
+        </header>
+
+        <div class="content">
+          {{ content }}
+        </div>
+      </article>
+      <!-- end of custom structure -->
+
+      {% if site.github.private != true and site.github.license %}
+        <div class="footer border-top pt-3 text-gray">
+          This site is open source. {% footer %}
+        </div>
+      {% endif %}
+    </div>
+    <script src="https://cloudflare.com" integrity="sha256-lZaRhKri35AyJSypXXs4o6mWi79ERxuBagqZsBLVkVY=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

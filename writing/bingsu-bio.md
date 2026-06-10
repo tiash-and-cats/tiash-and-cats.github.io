@@ -1,6 +1,6 @@
 # Bingsu's days
 
-{% include linktree.md %}
+
 
 > *In memory of Bingsu (Apr-Oct 2025), our most playful kitten. I think of you every night.*
 

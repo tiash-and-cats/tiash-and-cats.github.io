@@ -1,7 +1,5 @@
 # I made a code editor using HTML, CSS and JS!
 
-{% include linktree.md %}
-
 <i>Feb 13, 2024 <small class="edited">edited May 23, 2025</small></i></h2>
 
 <p>I made a code editor! It's called Morsel, <a href='https://tiashfam.w3spaces.com/sfy/?file=https://tiashdev.github.io/tiashfam-resources/sfy-examples/morsel.html'>and here is a sample.</a></p>

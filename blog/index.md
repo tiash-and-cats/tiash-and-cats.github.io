@@ -1,7 +1,5 @@
 # Blog
 
-{% include linktree.md %}
-
 Suprise! I have a blog now. Here are the posts that there currently are:
 
 {% for post in site.posts %}

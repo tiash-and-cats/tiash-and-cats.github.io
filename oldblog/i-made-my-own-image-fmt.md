@@ -1,7 +1,5 @@
 # I made my own image format!
 
-{% include linktree.md %}
-
 <i>Apr 6, 2025</i>
 
 <p>Well, of course I did. It's called NVGIF (Not Very Good Image Format), and it works!</p>

@@ -1,4 +1,4 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RNDZ5168TR"></script>
+{% include head-custom-google-analytics.html %}
 <script>
 function getAge(birthDateStr) {
   const birthDate = new Date(birthDateStr);
@@ -15,15 +15,6 @@ function getAge(birthDateStr) {
   }
   return age;
 }
-
-// Google Analytics
-function gtag(){
-  dataLayer.push(arguments);
-}
-
-window.dataLayer = window.dataLayer || [];
-gtag('js', new Date());
-gtag('config', 'G-RNDZ5168TR');
 
 document.addEventListener("DOMContentLoaded", () => {
   const age = getAge("2014-09-22");

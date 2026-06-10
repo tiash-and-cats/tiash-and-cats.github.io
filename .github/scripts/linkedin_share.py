@@ -60,10 +60,18 @@ headers = {
 
 payload = {
     "author": AUTHOR_URN,
-    "commentary": formatted_text,
-    "visibility": "PUBLIC",
-    "distribution": {"feedDistribution": "MAIN_FEED"},
     "lifecycleState": "PUBLISHED",
+    "specificContent": {
+        "com.linkedin.ugc.ShareContent": {
+            "shareCommentary": {
+                "text": formatted_text,
+            },
+            "shareMediaCategory": "NONE"
+        }
+    },
+    "visibility": {
+        "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC",
+    }
 }
 
 response = requests.post(url, headers=headers, json=payload)

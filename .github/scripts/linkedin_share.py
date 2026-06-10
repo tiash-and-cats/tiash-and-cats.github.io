@@ -6,8 +6,9 @@ import requests
 
 # configuration
 ACCESS_TOKEN = os.environ.get("LNKDIN_ACCESS_TOKEN")
-AUTHOR_URN = f.read()
-SITE_URL = "https://yourblog.com"             # Your live Jekyll base address
+with open("linkedin_url.config.txt"):
+    AUTHOR_URN = f.read()
+SITE_URL = "https://tiash-and-cats.github.io"
 
 if not ACCESS_TOKEN:
     print("\x1b[1;31mError: Missing LINKEDIN_ACCESS_TOKEN in Environment Secrets.\x1b[0m")

@@ -1,6 +1,6 @@
 - [Home](/)
 - [Projects](https://www.linkedin.com/in/rbm-tiash/details/projects/)
 - [Writings](/writing/)
-- [Blog](/blog.md)
+- [Blog](/blog/)
 
 ---

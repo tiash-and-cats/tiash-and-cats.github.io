@@ -9,7 +9,7 @@ In this post, I explain how I used GitHub Actions, Jekyll, and the LinkedIn API 
 
 ---
 
-Creating just a regular blog is quite easy. Jekyll (the static site generator GitHub Pages uses) has builtin support for blogs. You just define a blog layout and put your posts in /_posts in the format YEAR-MONTH-DAY-title.md. 
+Creating just a regular blog is quite easy. Jekyll (the static site generator GitHub Pages uses) has builtin support for blogs. You just define a blog layout and put your posts in `/_posts` in the format `YEAR-MONTH-DAY-title.md`. 
 
 But I wanted to something else too. You see, for some time, I've been posting updates on LinkedIn. But I've quickly realized that it's not the best place for longer posts. So I decided to start a blog, but still post smaller updates on LinkedIn, and not force my followers to find my website. So I wanted to post to LinkedIn whenever I make a new blog post, and automate it because it seemed like a fun project.
 
@@ -21,7 +21,7 @@ Firstly, I had to create an LinkedIn app. To do that, I went to [LinkedIn Develo
 
 Then I wrote a Python script called `linkedin_secrets.py`. It uses the "Sign In with LinkedIn using OpenID Connect" product to sign in to your account. It then gets an access token which must be saved securely and the user's URN (Uniform Resource Names, basically an ID LinkedIn gives to your account) which is saved to a file. I logged in so that it could post using my account.
 
-I wrote another Python script called `.github/scripts/linkedin_share.py`, which takes the latest blog post and posts the post's title, description (first paragraph), and link to LinkedIn.
+I wrote another Python script called `.github/scripts/linkedin_share.py`, which takes the latest blog post and posts the post's title, description (first paragraph), and link to LinkedIn. This script is automatically called by a GitHub Action that runs each time a commit is pushed to `main`.
 
 ## What did I learn?
 

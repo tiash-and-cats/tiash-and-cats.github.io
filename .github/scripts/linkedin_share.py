@@ -5,8 +5,8 @@ import frontmatter  # Parses and rewrites YAML front matter safely
 import requests
 
 # configuration
-ACCESS_TOKEN = os.environ.get("LINKEDIN_ACCESS_TOKEN")
-AUTHOR_URN = "urn:li:person:YOUR_MEMBER_ID"  # Swap with your actual public URN string
+ACCESS_TOKEN = os.environ.get("LNKDIN_ACCESS_TOKEN")
+AUTHOR_URN = f.read()
 SITE_URL = "https://yourblog.com"             # Your live Jekyll base address
 
 if not ACCESS_TOKEN:
@@ -36,7 +36,7 @@ if post.get("post2lnkdin") is False:
 print("\x1b[1mNew post discovered! Preparing LinkedIn broadcast...\x1b[0m")
 
 title = post.get("title", "New Blog Update")
-description = post.get("description", post.content[:150].strip() + "...")
+description = post.get("description", post.content.split("\n\n", 1)[0])
 
 # derive custom Jekyll permalink structure from file name
 filename = os.path.basename(latest_post_path)

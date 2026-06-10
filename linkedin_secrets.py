@@ -83,8 +83,9 @@ def get_tokens(code):
     member_urn = f"urn:li:person:{profile_data['sub']}"
 
     # Output data for GitHub Secrets
-    print("\x1b[1;32msuccess!\n\nQuickly copy this value to GitHub Repo Secrets:\x1b[0m\n")
-    print(f"\x1b[1mLINKEDIN_ACCESS_TOKEN\x1b[0m = {access_token}\n")
+    print("\x1b[1;32msuccess!\x1b[0m\n")
+    print("\x1b[1m" + " Quickly copy this value to GitHub Repo Secrets: ".center(80, "=") + "\x1b[0m")
+    print(f"\x1b[1mLNKDIN_ACCESS_TOKEN\x1b[0m = {access_token}\n")
     print("\x1b[1;33mThe access token will expire after 60 days. That means "
           "you will have to run this script again after 60 days.\x1b[0m")
     

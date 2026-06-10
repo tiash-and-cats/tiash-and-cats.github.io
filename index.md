@@ -14,4 +14,4 @@ If you got redirected from https://tiashfam.w3spaces.com/, then it's because tha
 2. Without W3Schools Pro, W3Schools Spaces has a limit on how many visits your site gets.
 3. It also has a limit on how many files your site can have.
 
-All important stuff has been moved (for example, my now-defunct [blog](oldblog/), previously News, and my [writings](writing/), previously Books).
+All important stuff has been moved (for example, my [blog](blog.md), previously News, and my [writings](writing/), previously Books).

@@ -16,6 +16,7 @@
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
           {% include linktree.html %}
         </header>
+        {% if page.show_title || page.date || page.tags %}
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
           {% if page.show_title %}
             <h1>{{ page.title }}</h1>
@@ -33,6 +34,7 @@
             <p><em>Tags: {{ page.tags | join: ", " }}</em></p>
           {% endif %}
         </header>
+        {% endif %}
 
         <div class="content">
           {{ content }}

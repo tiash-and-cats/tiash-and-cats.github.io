@@ -6,7 +6,7 @@ import requests
 
 # configuration
 ACCESS_TOKEN = os.environ.get("LNKDIN_ACCESS_TOKEN")
-with open("linkedin_urn.config.txt"):
+with open("linkedin_urn.config.txt") as f:
     AUTHOR_URN = f.read()
 SITE_URL = "https://tiash-and-cats.github.io"
 

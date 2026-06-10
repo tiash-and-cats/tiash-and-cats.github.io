@@ -82,4 +82,4 @@ jobs:
               uses: stefanzweifel/git-auto-commit-action@v5
               with:
                   commit_message: "automation: update linkedin distribution flag [skip ci]"
-                  file_pattern: '_posts/*.md _posts/*.markdown'
+                  file_pattern: '_posts/*.md'

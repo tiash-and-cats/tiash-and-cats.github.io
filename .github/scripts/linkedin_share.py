@@ -47,7 +47,15 @@ post_date_path = date_part.replace("-", "/")
 
 # construct production hyperlink path
 permalink = f"{SITE_URL}/{post_date_path}/{title_part}.html"
-formatted_text = f"{title}\n\n{description}\n\nRead it here: {permalink}"
+formatted_text = f"""\
+New blog post is out!
+
+Title: {title}
+
+{description}
+
+👉 Read it here: {permalink}\
+"""
 
 # execute LinkedIn REST API Request
 url = "https://api.linkedin.com/v2/ugcPosts"

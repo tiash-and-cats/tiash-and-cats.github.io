@@ -7,7 +7,7 @@ import requests
 # configuration
 ACCESS_TOKEN = os.environ.get("LNKDIN_ACCESS_TOKEN")
 with open("linkedin_urn.config.txt") as f:
-    AUTHOR_URN = f.read()
+    AUTHOR_URN = f.read().strip()
 SITE_URL = "https://tiash-and-cats.github.io"
 
 if not ACCESS_TOKEN:
@@ -50,33 +50,39 @@ permalink = f"{SITE_URL}/{post_date_path}/{title_part}.html"
 formatted_text = f"{title}\n\n{description}\n\nRead it here: {permalink}"
 
 # execute LinkedIn REST API Request
-url = "https://api.linkedin.com/rest/posts"
+url = "https://api.linkedin.com/v2/ugcPosts"
 
 headers = {
     "Authorization": f"Bearer {ACCESS_TOKEN}",
-    "LinkedIn-Version": "202605",          # Crucial: Forces modern parsing engines
     "X-Restli-Protocol-Version": "2.0.0",
     "Content-Type": "application/json",
 }
 
 payload = {
-    "author": AUTHOR_URN,                  # Cleaned alpha-numeric URN
-    "commentary": formatted_text,
-    "visibility": "PUBLIC",
-    "distribution": {"feedDistribution": "MAIN_FEED"},
+    "author": AUTHOR_URN,
     "lifecycleState": "PUBLISHED",
+    "specificContent": {
+        "com.linkedin.ugc.ShareContent": {
+            "shareCommentary": {
+                "text": formatted_text
+            },
+            "shareMediaCategory": "NONE"
+        }
+    },
+    "visibility": {
+        "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+    }
 }
-
 
 response = requests.post(url, headers=headers, json=payload)
 
 if response.status_code == 201:
-    print(f"\x1b[1;22mSuccessfully posted to LinkedIn! URN ID: {response.headers.get('x-restli-id')}\x1b[0m")
+    print(f"\x1b[1;22mSuccessfully posted to LinkedIn! ID: {response.json().get('id')}\x1b[0m")
     
-    # modify frontmatter and overwrite file to prevent duplicate triggers
+    # Save tracking variables to markdown front matter
     post["post2lnkdin"] = False
     with open(latest_post_path, "w", encoding="utf-8") as f:
-        frontmatter.dump(post, f, sort_keys=False)  # preserves structure alignment
+        frontmatter.dump(post, f, sort_keys=False)
     print(f"\x1b[1mAppended 'post2lnkdin: false' to {filename} natively.\x1b[0m")
 else:
     print(f"\x1b[1;31mAPI Rejected Request: {response.status_code}\n{response.json()}\x1b[0m")

@@ -1,7 +1,8 @@
 ---
-layout:  post
-title:   "Creating a blog"
-tags:    programming python jekyll github linkedin api secrets
+layout: post
+title: Creating a blog
+tags: programming python jekyll github linkedin api secrets
+post2lnkdin: false
 ---
 
 In this post, I explain how I used GitHub Actions, Jekyll, and the LinkedIn API to build a blog.

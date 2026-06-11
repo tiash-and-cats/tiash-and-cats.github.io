@@ -2,7 +2,6 @@
 title: Creating a blog
 show_title: true
 tags: programming python jekyll github linkedin api secrets
-post2lnkdin: false
 ---
 
 In this post, I explain how I used GitHub Actions, Jekyll, and the LinkedIn API to build a blog.

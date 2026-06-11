@@ -1,5 +1,5 @@
 ---
-title:  Automating LinkedIn posts for my blog: Part 2
+title: Automating LinkedIn posts for my blog - Part 2
 tags: programming python linkedin api automation
 ---
 

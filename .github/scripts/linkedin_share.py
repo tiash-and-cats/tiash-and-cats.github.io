@@ -129,30 +129,29 @@ if not DRY_RUN:
     response = requests.post(url, headers=headers, json=payload)
 
     if response.status_code == 201:
-    post_id = response.json().get("id")
-    print(f"\x1b[1;32mSuccessfully posted to LinkedIn! ID: {post_id}\x1b[0m")
+        post_id = response.json().get("id")
+        print(f"\x1b[1;32mSuccessfully posted to LinkedIn! ID: {post_id}\x1b[0m")
 
-    # Save tracking variables to markdown front matter
-    post["post2lnkdin"] = False
-    with open(latest_post_path, "w", encoding="utf-8") as f:
-        frontmatter.dump(post, f, sort_keys=False)
-    print(f"\x1b[1mAppended 'post2lnkdin: false' to {filename} natively.\x1b[0m")
+        # Save tracking variables to markdown front matter
+        post["post2lnkdin"] = False
+        with open(latest_post_path, "w", encoding="utf-8") as f:
+            frontmatter.dump(post, f, sort_keys=False)
+        print(f"\x1b[1mAppended 'post2lnkdin: false' to {filename} natively.\x1b[0m")
 
-    # Now post the follow-up comment
-    comment_url = f"https://api.linkedin.com/v2/socialActions/{post_id}/comments"
-    comment_payload = {
-        "actor": AUTHOR_URN,
-        "message": {
-            "text": comment_text
+        # Now post the follow-up comment
+        comment_url = f"https://api.linkedin.com/v2/socialActions/{post_id}/comments"
+        comment_payload = {
+            "actor": AUTHOR_URN,
+            "message": {
+                "text": comment_text
+            }
         }
-    }
 
-    comment_response = requests.post(comment_url, headers=headers, json=comment_payload)
-    if comment_response.status_code == 201:
-        print("\x1b[1;32mSuccessfully added disclaimer comment!\x1b[0m")
-    else:
-        print(f"\x1b[1;31mFailed to add comment: {comment_response.status_code}\n{comment_response.json()}\x1b[0m")
-
+        comment_response = requests.post(comment_url, headers=headers, json=comment_payload)
+        if comment_response.status_code == 201:
+            print("\x1b[1;32mSuccessfully added disclaimer comment!\x1b[0m")
+        else:
+            print(f"\x1b[1;31mFailed to add comment: {comment_response.status_code}\n{comment_response.json()}\x1b[0m")
     else:
         print(f"\x1b[1;31mAPI Rejected Request: {response.status_code}\n{response.json()}\x1b[0m")
         sys.exit(1)

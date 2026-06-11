@@ -147,6 +147,7 @@ if not DRY_RUN:
                 "text": comment_text
             }
         }
+        headers["Linkedin-Version"] = "202605"
 
         comment_response = requests.post(comment_url, headers=headers, json=comment_payload)
         if comment_response.status_code == 201:

@@ -139,9 +139,10 @@ if not DRY_RUN:
         print(f"\x1b[1mAppended 'post2lnkdin: false' to {filename} natively.\x1b[0m")
 
         # Now post the follow-up comment
-        comment_url = f"https://api.linkedin.com/v2/socialActions/{post_id}/comments"
+        comment_url = f"https://api.linkedin.com/rest/socialActions/{post_id}/comments"
         comment_payload = {
             "actor": AUTHOR_URN,
+            "object": post_id,
             "message": {
                 "text": comment_text
             }

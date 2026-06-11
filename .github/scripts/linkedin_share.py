@@ -1,13 +1,15 @@
 import os
 import sys
 import glob
-import frontmatter  # Parses and rewrites YAML front matter safely
-import requests
 import random
 import datetime
-from urllib.parse import quote
+import frontmatter  # Parses and rewrites YAML front matter safely
 
 DRY_RUN = len(sys.argv) >= 2 and sys.argv[1] == "--dry-run"
+
+if not DRY_RUN:
+    import requests
+    from urllib.parse import quote
 
 # configuration
 if not DRY_RUN:
@@ -145,4 +147,3 @@ if not DRY_RUN:
         sys.exit(1)
 else:
     print(formatted_text)
-    print(comment_text)

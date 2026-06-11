@@ -3,7 +3,7 @@ title: Automating LinkedIn posts for my blog - Part 2
 tags: programming python linkedin api automation
 ---
 
-In this post, I explain how I improved my LinkedIn automation script by adding bold/italic formatting, randomized call-to-actions, and a follow‑up comment feature.
+In this post, I explain how I improved my LinkedIn automation script by adding bold/italic formatting and randomized call-to-actions.
 
 ---
 
@@ -11,7 +11,7 @@ View the code [here](https://github.com/tiash-and-cats/tiash-and-cats.github.io/
 
 Plain text LinkedIn posts looked a bit flat, and could easily be missed in the midst of a doomscrolling session. So I added translation maps for bold, italic, and bold‑italic alphabets using Unicode pseudofonts. I know all you LinkedIn users used a LinkedIn Text Formatter at least once in your lifetime! I basically embedded one in my script. It makes the LinkedIn feed more eye‑catching and easier to skim.
 
-Before, it would always show the same boring "New blog post is out!" call-to-action without any emojis or formatting or anything. Now that call to action is bold, has an emoji, and is randomized. I also emboldened the "Title:" and emboldened and randomized the "👉 Read it here:" text to either be "👉 Read it here:" or "👉 Check it out!"
+Before, it would always show the same boring "New blog post is out!" call-to-action without any emojis or formatting or anything. Now that call to action is bold, has an emoji, and is randomized. I also emboldened the "Title:" text and emboldened and randomized the "👉 Read it here:" text to either be "👉 Read it here:" or "👉 Check it out!"
 
 Previously, the posts weren't very clear about whether they were posted by a human or not. I wanted to keep my main post clean, but still be transparent that the LinkedIn posts weren't being posted by a human, so I decided to put a comment under the post. That didn't go so well. So there's now just a note in the post that says:
 

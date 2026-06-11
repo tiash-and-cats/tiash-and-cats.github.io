@@ -33,4 +33,4 @@ That's it!
 
 I learnt that LinkedIn's API has multiple endpoints (`ugcPosts` vs `socialActions`), and knowing which one to use is key. Formatting with Unicode alphabets is surprisingly fun! And though comments didn't work out, there was still a light at the end of the tunnel.
 
-Now my blog posts show up on LinkedIn with styled text and randomized CTAs, and each one has a clear comment explaining the automation.
+Now my blog posts show up on LinkedIn with styled text and randomized CTAs.

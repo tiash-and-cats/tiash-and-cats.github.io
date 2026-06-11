@@ -1,7 +1,7 @@
 ---
 title: Automating LinkedIn posts for my blog - Part 2
+show_title: true
 tags: programming python linkedin api automation
-post2lnkdin: false
 ---
 
 In this post, I explain how I improved my LinkedIn automation script by adding bold/italic formatting and randomized call-to-actions.
@@ -24,13 +24,12 @@ That way, anyone curious can see how it works, without cluttering the announceme
 
 1. The script gets the latest blog post.
 2. It prepares a LinkedIn post text and the comment text.
-3. It posts the blog update to LinkedIn via the `ugcPosts` API.  
-4. It grabs the post ID from the response.  
-5. It immediately calls the `socialActions/{postId}/comments` endpoint to add the disclaimer comment.  
-6. The post front matter is updated with `post2lnkdin: false` so it won't repost.
+3. It posts the blog update to LinkedIn via the `ugcPosts` API. 
+
+That's it!
 
 ## What did I learn?
 
-I learnt that LinkedIn's API has multiple endpoints (`ugcPosts` vs `socialActions`), and knowing which one to use is key. Formatting with Unicode alphabets is surprisingly fun! Keeping disclaimers in comments keeps the feed polished but still transparent.
+I learnt that LinkedIn's API has multiple endpoints (`ugcPosts` vs `socialActions`), and knowing which one to use is key. Formatting with Unicode alphabets is surprisingly fun! And though comments didn't work out, there was still a light at the end of the tunnel.
 
 Now my blog posts show up on LinkedIn with styled text and randomized CTAs, and each one has a clear comment explaining the automation.

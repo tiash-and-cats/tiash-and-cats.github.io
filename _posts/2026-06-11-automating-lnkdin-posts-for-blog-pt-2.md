@@ -1,6 +1,7 @@
 ---
 title: Automating LinkedIn posts for my blog - Part 2
 tags: programming python linkedin api automation
+post2lnkdin: false
 ---
 
 In this post, I explain how I improved my LinkedIn automation script by adding bold/italic formatting, randomized call-to-actions, and a follow‑up comment feature.

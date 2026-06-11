@@ -34,7 +34,7 @@ class OAuthCallbackHandler(BaseHTTPRequestHandler):
                 <html>
                 <body>
                 
-                <h1>Authorization Successful!</h1>
+                <h1>Authorization successful!</h1>
                 <p>You can close this window and return to your terminal.</p>
                 
                 </body>
@@ -42,8 +42,19 @@ class OAuthCallbackHandler(BaseHTTPRequestHandler):
             """).encode("utf-8"))
         else:
             self.send_response(400)
+            self.send_header("Content-type", "text/html; charset=utf-8")
             self.end_headers()
-            self.wfile.write(b"Authorization failed or cancelled.")
+            self.wfile.write(dedent("""\
+                <!doctype html>
+                <html>
+                <body>
+                
+                <h1>Authorization failed...</h1>
+                <p>Re-run <code>linkedin_secrets.py</code> and try again.</p>
+                
+                </body>
+                </html>\
+            """).encode("utf-8"))
 
     def log_message(self, format, *args):
         return  # Suppress standard HTTP logging to keep terminal clean

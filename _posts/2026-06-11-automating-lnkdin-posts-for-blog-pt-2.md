@@ -13,9 +13,9 @@ Plain text LinkedIn posts looked a bit flat, and could easily be missed in the m
 
 Before, it would always show the same boring "New blog post is out!" call-to-action without any emojis or formatting or anything. Now that call to action is bold, has an emoji, and is randomized. I also emboldened the "Title:" and emboldened and randomized the "👉 Read it here:" text to either be "👉 Read it here:" or "👉 Check it out!"
 
-Previously, the posts weren't very clear about whether they were posted by a human or not. I wanted to keep my main post clean, but still be transparent that the LinkedIn posts weren't being posted by a human. So I now automatically add a comment under each post that says:
+Previously, the posts weren't very clear about whether they were posted by a human or not. I wanted to keep my main post clean, but still be transparent that the LinkedIn posts weren't being posted by a human, so I decided to put a comment under the post. That didn't go so well. So there's now just a note in the post that says:
 
-> 𝙉𝙤𝙩𝙚: 𝘉𝘰𝘵𝘩 𝘵𝘩𝘦 𝘰𝘳𝘪𝘨𝘪𝘯𝘢𝘭 𝘱𝘰𝘴𝘵 𝘢𝘯𝘥 𝘵𝘩𝘪𝘴 𝘤𝘰𝘮𝘮𝘦𝘯𝘵 𝘢𝘳𝘦 𝘨𝘦𝘯𝘦𝘳𝘢𝘵𝘦𝘥 𝘣𝘺 𝘢 𝘗𝘺𝘵𝘩𝘰𝘯 𝘴𝘤𝘳𝘪𝘱𝘵. 𝘠𝘰𝘶 𝘤𝘢𝘯 𝘧𝘪𝘯𝘥 𝘪𝘵 𝘩𝘦𝘳𝘦: https://github.com/tiash-and-cats/tiash-and-cats.github.io/blob/master/.github/scripts/linkedin_share.py. 𝘐𝘵 𝘴𝘪𝘮𝘱𝘭𝘺 𝘤𝘩𝘦𝘤𝘬𝘴 𝘵𝘩𝘦 𝘭𝘢𝘵𝘦𝘴𝘵 𝘣𝘭𝘰𝘨 𝘱𝘰𝘴𝘵 𝘢𝘯𝘥 𝘱𝘰𝘴𝘵𝘴 𝘢 𝘯𝘰𝘵𝘪𝘧𝘪𝘤𝘢𝘵𝘪𝘰𝘯 𝘪𝘯 𝘵𝘩𝘦 𝘧𝘰𝘳𝘮 𝘰𝘧 𝘢 𝘓𝘪𝘯𝘬𝘦𝘥𝘐𝘯 𝘱𝘰𝘴𝘵. 𝘛𝘩𝘪𝘴 𝘱𝘳𝘰𝘤𝘦𝘴𝘴 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘶𝘴𝘦 𝘈𝘐.
+> 𝙉𝙤𝙩𝙚: 𝘛𝘩𝘪𝘴 𝘱𝘰𝘴𝘵 𝘪𝘴 𝘨𝘦𝘯𝘦𝘳𝘢𝘵𝘦𝘥 𝘣𝘺 𝘢 𝘗𝘺𝘵𝘩𝘰𝘯 𝘴𝘤𝘳𝘪𝘱𝘵. 𝘠𝘰𝘶 𝘤𝘢𝘯 𝘧𝘪𝘯𝘥 𝘪𝘵 𝘩𝘦𝘳𝘦: https://github.com/tiash-and-cats/tiash-and-cats.github.io/blob/master/.github/scripts/linkedin_share.py. 𝘐𝘵 𝘴𝘪𝘮𝘱𝘭𝘺 𝘤𝘩𝘦𝘤𝘬𝘴 𝘵𝘩𝘦 𝘭𝘢𝘵𝘦𝘴𝘵 𝘣𝘭𝘰𝘨 𝘱𝘰𝘴𝘵 𝘢𝘯𝘥 𝘱𝘰𝘴𝘵𝘴 𝘢 𝘯𝘰𝘵𝘪𝘧𝘪𝘤𝘢𝘵𝘪𝘰𝘯 𝘪𝘯 𝘵𝘩𝘦 𝘧𝘰𝘳𝘮 𝘰𝘧 𝘢 𝘓𝘪𝘯𝘬𝘦𝘥𝘐𝘯 𝘱𝘰𝘴𝘵. 𝘛𝘩𝘪𝘴 𝘱𝘳𝘰𝘤𝘦𝘴𝘴 𝘥𝘰𝘦𝘴 𝘯𝘰𝘵 𝘶𝘴𝘦 𝘈𝘐.
 
 That way, anyone curious can see how it works, without cluttering the announcement itself.
 

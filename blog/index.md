@@ -12,6 +12,8 @@ Suprise! I have a blog now. Here are the posts that there currently are:
 {% endif %}
 {% endfor %}
 
+There's also [an RSS feed](/feed.xml).
+
 The following is the blog I used to maintain at my old website. It is kept for archival purposes. The earliest and cringiest posts have not been archived, for I want to make this site somewhat professional.
 
 - [I made a code editor using HTML, CSS and JS!](/oldblog/i-made-a-code-editor.html)

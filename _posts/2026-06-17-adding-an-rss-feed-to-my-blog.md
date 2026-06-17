@@ -2,6 +2,7 @@
 title: Adding an RSS feed to my blog
 show_title: true
 tags: programming jekyll rss automation
+post2lnkdin: false
 ---
 
 In this post, I explain how I added an RSS feed to my blog.

@@ -1,6 +1,5 @@
 ---
 title: Automating LinkedIn posts for my blog - Part 2
-show_title: true
 tags: programming python linkedin api automation
 post2lnkdin: false
 ---

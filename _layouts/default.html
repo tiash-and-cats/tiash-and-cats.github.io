@@ -7,11 +7,13 @@
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+    <style>
+      .content h1:first-child { display: none; }
+    </style>
     {% include head-custom.html %}
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
-      
       <!-- custom default layout structure -->
       <article>
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
@@ -19,9 +21,7 @@
         </header>
         {% if page.show_title or page.date or page.tags %}
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
-          {% if page.show_title %}
-            <h1>{{ page.title }}</h1>
-          {% endif %}
+          <h1>{{ page.title }}</h1>
           
           <!-- automatically renders if the page configuration has a date -->
           {% if page.date %}

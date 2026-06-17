@@ -23,14 +23,16 @@
         
         {% if page.date or page.tags %}
           <p>
-            {% if page.date %}
-            <em><time datetime="{{ page.date | date_to_xmlschema }}">
-              Published on {{ page.date | date: "%B %d, %Y" }}
-            </time></em>
-            {% endif %}
-            {% if page.tags %}
-              <br><em>Tags: {{ page.tags | join: ", " }}</em>
-            {% endif %}
+            <blockquote>
+              {% if page.date %}
+                <em><time datetime="{{ page.date | date_to_xmlschema }}">
+                  Published on {{ page.date | date: "%B %d, %Y" }}
+                </time></em>
+              {% endif %}
+              {% if page.tags %}
+                <br><em>Tags: {{ page.tags | join: ", " }}</em>
+              {% endif %}
+            </blockquote>
           </p>
         {% endif %}
 

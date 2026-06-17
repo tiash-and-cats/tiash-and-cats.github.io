@@ -2,15 +2,15 @@
 
 Suprise! I have a blog now. Here are the posts that there currently are:
 
+<ul>
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }})
-{% if post.date %}
-  {{ post.date | date: "%B %d, %Y" }}
-{% endif %}
-{% if post.tags %}
-  Tags: {{ post.tags | join: ", " }}
-{% endif %}
+  <p><li>
+    <a href="{{ post.url }}">{{ post.title }}</a><br>
+    {{ post.date | date: "%B %d, %Y" }}<br>
+    <blockquote>{{ post.excerpt }}</blockquote>
+  </li></p>
 {% endfor %}
+</ul>
 
 There's also [an RSS feed](/feed.xml).
 

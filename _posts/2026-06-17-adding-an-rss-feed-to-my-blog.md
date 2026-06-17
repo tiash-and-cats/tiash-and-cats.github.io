@@ -22,7 +22,7 @@ I created a `feed.xml` template in Jekyll that loops through all posts and outpu
 - Publication date
 - GUID (permalink)
 
-Here's the snippet:
+Here's a basic snippet:
 
 {% raw %}
 ``` xml

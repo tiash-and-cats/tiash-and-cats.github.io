@@ -19,23 +19,22 @@
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
           {% include linktree.html %}
         </header>
-        {% if page.show_title or page.date or page.tags %}
-        <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
-          <h1>{{ page.title }}</h1>
-          
-          <!-- automatically renders if the page configuration has a date -->
-          {% if page.date %}
-            <p><em><time datetime="{{ page.date | date_to_xmlschema }}">
+        <h1>{{ page.title }}</h1>
+        
+        {% if page.date or page.tags %}
+          <p>
+            {% if page.date %}
+            <em><time datetime="{{ page.date | date_to_xmlschema }}">
               Published on {{ page.date | date: "%B %d, %Y" }}
-            </time></em></p>
-          {% endif %}
-
-          <!-- automatically renders if the page configuration has tags -->
-          {% if page.tags %}
-            <p><em>Tags: {{ page.tags | join: ", " }}</em></p>
-          {% endif %}
-        </header>
+            </time></em>
+            {% endif %}
+            {% if page.tags %}
+              <br><em>Tags: {{ page.tags | join: ", " }}</em>
+            {% endif %}
+          </p>
         {% endif %}
+        
+        <hr>
 
         <div class="content">
           {{ content }}

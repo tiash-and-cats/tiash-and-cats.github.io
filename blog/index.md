@@ -4,11 +4,11 @@ Suprise! I have a blog now. Here are the posts that there currently are:
 
 <ul>
 {% for post in site.posts %}
-  <p><li>
+  <li>
     <a href="{{ post.url }}">{{ post.title }}</a><br>
     {{ post.date | date: "%B %d, %Y" }}<br>
-    <blockquote>{{ post.excerpt }}</blockquote>
-  </li></p>
+    <p><blockquote>{{ post.excerpt }}</blockquote></p>
+  </li>
 {% endfor %}
 </ul>
 

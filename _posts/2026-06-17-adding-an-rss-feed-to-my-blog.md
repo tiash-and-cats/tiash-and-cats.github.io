@@ -23,7 +23,12 @@ I created a `feed.xml` template in Jekyll that loops through all posts and outpu
 
 Here's the snippet:
 
-```xml
+{% raw %}
+``` xml
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.title | xml_escape }}</title>
@@ -41,6 +46,9 @@ Here's the snippet:
   </channel>
 </rss>
 ```
+{% endraw %}
+
+The `layout: null` is important, as it prevents Jekyll from trying to put the RSS inside an HTML layout.
 
 ---
 

@@ -1,7 +1,5 @@
 # Writings
 
-
-
 Here are some things I wrote. As traditional publishing is currently out of my reach, I decided on digital publishing.
 
 ## Memorials and biographies
@@ -15,5 +13,5 @@ Here are some things I wrote. As traditional publishing is currently out of my r
 
 ### Ordinaire Series
 
-- [Ordinaire #1: A Normal Day at School](A_Normal_Day_at_School.pdf): An ordinary day at school. How boring. Yawn. There are absolutely no bats that thrashed the cafeteria. Or ostriches that thrashed the library. How boring. Yawn.
+- [Ordinaire #1: A Normal Day at School](A_Normal_Day_at_School.pdf): An ordinary day at school. How boring. Yawn. There are absolutely no bats that thrashed the cafeteria. Or ostriches that thrashed the library. You would not be wrong to choose something else to read.
 - [Ordinaire #2: A Regular Field Trip](A_Regular_Field_Trip.pdf): A very normal field trip on a motorboat. There was absolutely no pirates involved, let alone bird pirates! I would rather read something more interesting.

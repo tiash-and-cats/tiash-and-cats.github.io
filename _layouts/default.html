@@ -4,19 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Jekyll v3.10.0" />
-    <meta property="og:title" content="Tiash's website!" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="description" content="Tiash's website!" />
-    <meta property="og:description" content="Tiash's website!" />
-    <link rel="canonical" href="https://tiash.is-cool.dev/" />
-    <meta property="og:url" content="https://tiash.is-cool.dev//" />
-    <meta property="og:site_name" content="Tiash&#39;s website!" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <meta property="twitter:title" content="Tiash&#39;s website!" />
-    <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"My website!","headline":"Tiash&#39;s website!","name":"Tiash&#39;s website!","url":"http://tiash-and-cats.github.io/"}</script>
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
     <style>
@@ -54,5 +42,7 @@
       </article>
       <!-- end of custom structure -->
     </div>
+    <script src="https://cloudflare.com" integrity="sha256-lZaRhKri35AyJSypXXs4o6mWi79ERxuBagqZsBLVkVY=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
   </body>
 </html>

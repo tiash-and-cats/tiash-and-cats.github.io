@@ -13,3 +13,5 @@ If you got redirected from https://tiashfam.w3spaces.com/, then it's because tha
 3. It also has a limit on how many files your site can have.
 
 All important stuff has been moved (for example, my [blog](blog/), previously News, and my [writings](writing/), previously Books).
+
+If you got redirected from https://tiash-and-cats.github.io/, that's because that was the old domain for this website. This site has been moved to the new domain https://tiash.is-cool.dev/, which you should be able to see in your address bar.

@@ -139,9 +139,8 @@ def crawl():
             if urllib.parse.urlsplit(abs_lk).netloc != "tiash.is-cool.dev":
                 continue
             
-            abs_lk = urllib.parse.urlunsplit(
-                urllib.parse.urlsplit(abs_lk)._replace(fragment="")
-            )
+            abs_lk = \
+                urllib.parse.urlsplit(abs_lk)._replace(fragment="").geturl()
             
             if abs_lk in VISITED:
                 continue

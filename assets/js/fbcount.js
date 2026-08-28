@@ -5,14 +5,6 @@ class FbCount extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
       <style>
-        @font-face {
-          font-family: 'facebook';
-          src: url('/assets/fonts/facebook.woff2') format('woff2');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
-        }
-
         .fbcount {
           background-image: linear-gradient(#0064e0, #1877f2);
           position: relative;

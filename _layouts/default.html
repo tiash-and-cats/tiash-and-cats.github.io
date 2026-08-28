@@ -9,6 +9,13 @@
     <script src="{{ "/assets/js/fbcount.js?v=" | append: site.github.build_revision | relative_url }}"></script>
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
     <style>
+      @font-face {
+        font-family: facebook;
+        src: url('/assets/fonts/facebook.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
       .content h1:first-child { display: none; }
     </style>
     {% include head-custom.html %}

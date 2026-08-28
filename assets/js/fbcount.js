@@ -7,7 +7,7 @@ class FbCount extends HTMLElement {
       <style>
         @font-face {
           font-family: 'facebook';
-          src: url('https://static.xx.fbcdn.net/rsrc.php/yQ/r/-pkMfchyeAZ.woff2') format('woff2');
+          src: url('/assets/fonts/facebook.woff2') format('woff2');
           font-weight: normal;
           font-style: normal;
           font-display: swap;

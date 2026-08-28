@@ -1,3 +1,4 @@
+{% raw %}
 <style>
 @font-face {
   font-family: 'facebook';
@@ -15,21 +16,20 @@
   font-size: 1.5625rem;
   padding: 1em;
   padding-bottom: 1.5em;
+}
   
-  p {
-    margin-block: 0.5em;
-  }
-  
-  .countdown {
-    font-size: 1.2em;
-  }
+.fbcount p {
+  margin-block: 0.5em;
+}
 
-  h1 {
-    margin-bottom: 0.25em;
-  }
+.fbcount .countdown {
+  font-size: 1.2em;
+}
+
+.fbcount h1 {
+  margin-bottom: 0.25em;
 }
 </style>
-<body>
 
 <div class="fbcount">
   <h1>Countdown until I can get a new Facebook account</h1>
@@ -57,16 +57,21 @@ function countDown() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   // Output the result in the element with .fbcount .countdown
-  document.querySelector(".fbcount .countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  var countdownEl = document.querySelector(".fbcount .countdown");
+  if (countdownEl) {
+    countdownEl.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  }
   
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "Yay! I can make one now.";
+    if (countdownEl) {
+      countdownEl.innerHTML = "Yay! I can make one now.";
+    }
   }
 }
 
 countDown();
 setInterval(countDown, 1000);
 </script>
+{% endraw %}

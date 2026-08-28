@@ -4,7 +4,7 @@ Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tia
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 
-{% include "fbcount.html" %}
+{% include fbcount.html %}
 
 ## Why did I get redirected here?
 

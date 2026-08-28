@@ -28,9 +28,11 @@ class FbCount extends HTMLElement {
         }
       </style>
       <div class="fbcount">
-        <h1><slot name="title">Countdown until I can get a new Facebook account</slot></h1>
+        <h1>Countdown until I can get a new Facebook account</h1>
         <p class="countdown"></p>
-        <p><slot name="description">My old one got terminated for being underage. I just used to use it for Messenger. Not too sad about it, as I was underage and I didn't use Facebook much.</slot></p>
+        <p>My old one got terminated for being underage. I just used to use it for Messenger. Not too sad about it, as I was, in fact, underage, and I didn't use Facebook much anyway.</p>
+        <p>This counts down until my 13th birthday, which, as I live in Bangladesh, is the age that I can officially open a Facebook account.</p>
+        <p>That's why you can't reach me on Messenger. Don't worry, I'm still alive!</p>
       </div>
     `;
   }

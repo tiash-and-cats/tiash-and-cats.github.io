@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNDZ5168TR"></script>
+    <script>
+    // Google Analytics
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    gtag('js', new Date());
+    gtag('config', 'G-RNDZ5168TR');
+    </script>
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <script src="{{ "/assets/js/fbcount.js?v=" | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ "/assets/js/custom-elements.js?v=" | append: site.github.build_revision | relative_url }}"></script>
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
     <style>
       @font-face {
@@ -25,7 +36,12 @@
       <!-- custom default layout structure -->
       <article>
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
-          {% include linktree.html %}
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://www.linkedin.com/in/rbm-tiash/details/projects/">Projects</a></li>
+            <li><a href="/writing/">Writings</a></li>
+            <li><a href="/blog/">Blog</a></li>
+          </ul>
         </header>
         <h1>{{ page.title }}</h1>
         

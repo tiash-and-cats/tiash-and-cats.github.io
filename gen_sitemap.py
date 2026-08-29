@@ -140,7 +140,8 @@ def crawl():
                 continue
             
             abs_lk = \
-                urllib.parse.urlsplit(abs_lk)._replace(fragment="").geturl()
+                urllib.parse.urlsplit(abs_lk)._replace(fragment="") \
+                ._replace(scheme="https").geturl()
             
             if abs_lk in VISITED:
                 continue

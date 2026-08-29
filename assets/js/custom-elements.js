@@ -1,4 +1,4 @@
-class FbCount extends HTMLElement {
+class FacebookAccountCountdown extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -38,7 +38,8 @@ class FbCount extends HTMLElement {
   }
 
   connectedCallback() {
-    const countDownDate = new Date("Sep 22, 2027 8:20:00").getTime();
+    // September 22, 2027, at 8:20 AM, BDST
+    const countDownDate = new Date("2027-09-22T08:20:00+06:00").getTime();
     const countdownEl = this.shadowRoot.querySelector(".countdown");
 
     function updateCountdown() {
@@ -66,4 +67,24 @@ class FbCount extends HTMLElement {
   }
 }
 
-customElements.define("fb-count", FbCount);
+class MyAge extends HTMLElement {
+  connectedCallback() {
+    const birthDate = new Date("2014-09-22T08:20:00+06:00");
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const hasHadBirthdayThisYear =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() &&
+       today.getDate() >= birthDate.getDate());
+
+    if (!hasHadBirthdayThisYear) {
+      age--;
+    }
+    
+    this.textContent = age;
+  }
+}
+
+customElements.define("fb-acc-countdown", FacebookAccountCountdown);
+customElements.define("my-age", MyAge);

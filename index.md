@@ -1,12 +1,12 @@
 # Tiash's website!
 
-Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<span id="age"></span> year old) developer. This is my little spot in the web.
+Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<my-age></my-age> years old) developer. This is my little spot in the web.
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 
 > Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.
 
-<fb-count></fb-count>
+<fb-acc-countdown></fb-acc-countdown>
 
 ## Why did I get redirected here?
 

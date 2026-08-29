@@ -2,6 +2,7 @@ https://tiash.is-cool.dev/
 https://tiash.is-cool.dev/writing/
 https://tiash.is-cool.dev/blog/
 https://tiash.is-cool.dev/nvgif/
+https://tiash.is-cool.dev/py0.9.1-win32/
 https://tiash.is-cool.dev/writing/the-life-of-dholu-and-kalu.html
 https://tiash.is-cool.dev/writing/bingsu-bio.html
 https://tiash.is-cool.dev/writing/The_Time_Machine.pdf
@@ -18,6 +19,9 @@ https://tiash.is-cool.dev/oldblog/i-made-my-own-image-fmt.html
 https://tiash.is-cool.dev/nvgif/specs/
 https://tiash.is-cool.dev/nvgif/implementations/
 https://tiash.is-cool.dev/nvgif/nvgifjstest.html
+https://tiash.is-cool.dev/py0.9.1-win32/mod.html
+https://tiash.is-cool.dev/py0.9.1-win32/tut.html
+https://tiash.is-cool.dev/py0.9.1-win32/manpage.html
 https://tiash.is-cool.dev/nvgif/specs/v123.html
 https://tiash.is-cool.dev/nvgif/specs/v4.html
 https://tiash.is-cool.dev/nvgif/specs/v5.html

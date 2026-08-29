@@ -4,6 +4,8 @@ Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tia
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 
+> Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.
+
 <fb-count></fb-count>
 
 ## Why did I get redirected here?

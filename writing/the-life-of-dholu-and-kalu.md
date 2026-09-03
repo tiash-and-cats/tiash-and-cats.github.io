@@ -1,7 +1,5 @@
 # The life of Dholu and Kalu
 
-
-
 > *In loving memory of Kalu (~2000-2026). He brought so much love into our lives.*
 
 Dholu (female, ~2000-, meaning white) and Kalu (male, ~2000-2026, meaning black) were two dogs. They lived across the road from my house. Dholu is white and Kalu was black. Much of their shared history is unknown, but I will try to recount what I can. They were probably lifetime companions.
@@ -27,3 +25,7 @@ She became disabled and was confined to a small space at the side of the road.
 I don't know how long she has left. I don't know if she'll heal. She's very old for a dog, and she's started shaking.
 
 All I can hope is that she doesn't die alone.
+
+## Update
+
+She has passed, sadly alone. She was buried. It has been a few months and the other woman and my mother still talk about days past.

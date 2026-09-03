@@ -2,6 +2,8 @@
 
 Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<my-age></my-age> years old) developer. This is my little spot in the web.
 
+[![WOw! Look at this GitHub!!](https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=github_dark_dimmed)](https://github.com/tiash-and-cats)
+
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 
 > Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.

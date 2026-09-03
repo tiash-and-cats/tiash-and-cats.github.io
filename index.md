@@ -2,10 +2,7 @@
 
 Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<my-age></my-age> years old) developer. This is my little spot in the web.
 
-<a href="https://github.com/tiash-and-cats"><div>
-  <p><img src="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=default_repocard" alt="GitHub Stats" style="width: min(500px, 100%)"></p>
-  <p><img src="https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=default_repocard)](https://github.com/tiash-and-cats" alt="GitHub Stats" style="width: min(500px, 100%)"></p>
-</div></a>
+<p><a href="https://github.com/tiash-and-cats/"><img src="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=default_repocard" alt="GitHub Stats" height="217"> <img src="https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=default_repocard)](https://github.com/tiash-and-cats" alt="GitHub Stats" height="217"></a></p>
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 

@@ -6,6 +6,8 @@ Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tia
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 
+[![tiash-and-cats/nvgif](https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif)](https://github.com/tiash-and-cats/nvgif) [![tiash-and-cats/finder](https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Ffinder)](https://github.com/tiash-and-cats/finder) [![PopcornOS/popcorn-os](https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os)](https://github.com/tiash-and-cats/finder)
+
 > Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.
 
 <fb-acc-countdown></fb-acc-countdown>

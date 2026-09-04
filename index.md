@@ -4,7 +4,9 @@ Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tia
 
 I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Raiyan Binte Mohammad Tista)](tista.gif). None of this would be possible without [my mother](https://www.linkedin.com/in/kftrisha/).
 
-<p><a href="https://github.com/tiash-and-cats/"><img src="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=default_repocard" alt="GitHub Stats" height="217"> <img src="https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=default_repocard)](https://github.com/tiash-and-cats" alt="GitHub Stats" height="217"></a></p>
+![My GitHub stats](https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=default_repocard) 
+
+![My most used languages](https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=default_repocard&layout=compact)
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 

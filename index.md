@@ -24,14 +24,16 @@ I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Ra
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 
-<a href="https://github.com/tiash-and-cats/nvgif"><picture>
+<a href="https://github.com/tiash-and-cats/nvgif">
+<picture>
   <source 
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
     src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif&theme=default_repocard" 
     alt="tiash-and-cats/nvgif">
-</picture></a>
+</picture>
+</a>
 <a href="https://github.com/PopcornOS/popcorn-os"><picture>
   <source 
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os&theme=highcontrast" 

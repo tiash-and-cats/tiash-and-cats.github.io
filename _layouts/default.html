@@ -27,6 +27,26 @@
         font-style: normal;
         font-display: swap;
       }
+      
+      .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        background: #000;
+        color: #fff;
+        padding: 10px 20px;
+        z-index: 100;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 0 0 5px 5px;
+        transition: top 0.2s ease-in-out; /* Optional smooth slide-in */
+      }
+
+      /* Bring the link into view only when a user tabs onto it */
+      .skip-link:focus {
+        top: 0;
+      }
+      
       .content h1:first-child { display: none; }
       .markdown-body { font-family: "Times New Roman"; }
       h1, h2, h3, h4, h5, h6 { font-family: Georgia, Verdana, Tahoma; }
@@ -34,6 +54,8 @@
     {% include head-custom.html %}
   </head>
   <body>
+    <a class="skip-link" href="#content">Skip to main content</a>
+  
     <div class="container-lg px-3 my-5 markdown-body">
       <!-- custom default layout structure -->
       <article>
@@ -62,7 +84,7 @@
           </p>
         {% endif %}
 
-        <div class="content">
+        <div class="content" id="content">
           {{ content }}
         </div>
         

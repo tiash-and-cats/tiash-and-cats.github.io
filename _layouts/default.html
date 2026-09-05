@@ -40,7 +40,17 @@
       .skip-link:focus {
         top: 0;
       }
-      
+
+      .skip-link.nav {
+        bottom: -100px;
+        right: 0;
+      }
+
+      /* Bring the link into view only when a user tabs onto it */
+      .skip-link.nav:focus {
+        bottom: 0;
+      }
+
       .content h1:first-child { display: none; }
       .markdown-body { font-family: "Times New Roman"; }
       h1, h2, h3, h4, h5, h6 { font-family: Georgia, Verdana, Tahoma; }
@@ -53,12 +63,12 @@
       <!-- custom default layout structure -->
       <article>
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">
-          <ul>
+          <nav id="navigation"><ul>
             <li><a href="/">Home</a></li>
             <li><a href="https://www.linkedin.com/in/rbm-tiash/details/projects/">Projects</a></li>
             <li><a href="/writing/">Writings</a></li>
             <li><a href="/blog/">Blog</a></li>
-          </ul>
+          </ul></nav>
         </header>
         <h1>{{ page.title }}</h1>
         
@@ -77,9 +87,9 @@
           </p>
         {% endif %}
 
-        <div class="content" id="content">
+        <main class="content" id="content">
           {{ content }}
-        </div>
+        </main>
         
         <footer>
           <hr>
@@ -87,6 +97,7 @@
           <p><img src="https://shields.io/github/last-commit/tiash-and-cats/tiash-and-cats.github.io" alt="Last commit"></p>
         </footer>
       </article>
+      <a class="skip-link nav" href="#navigation">Back to navigation</a>
       <!-- end of custom structure -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/5.0.0/anchor.min.js" integrity="sha512-byAcNWVEzFfu+tZItctr+WIMUJvpzT2kokkqcBq+VsrM3OrC5Aj9E2gh+hHpU0XNA3wDmX4sDbV5/nkhvTrj4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -4,13 +4,58 @@ Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tia
 
 I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Raiyan Binte Mohammad Tista)](tista.gif). None of this would be possible without [my mother](https://www.linkedin.com/in/kftrisha/).
 
-![My GitHub stats](https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=default_repocard) 
+<picture>
+  <source 
+    srcset="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=highcontrast" 
+    media="(forced-colors: active)">
+  <img 
+    src="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=default_repocard" 
+    alt="My GitHub stats">
+</picture>
 
-![My most used languages](https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=default_repocard&layout=compact)
+<picture>
+  <source 
+    srcset="https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=highcontrast&layout=compact" 
+    media="(forced-colors: active)">
+  <img 
+    src="https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=default_repocard&layout=compact" 
+    alt="My most used languages">
+</picture>
 
 I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/), such as an [image format](https://tiash.is-cool.dev/nvgif/) and an [operating system](https://github.com/PopcornOS/popcorn-os). I've also [written some stuff](writing/).
 
-[![tiash-and-cats/nvgif](https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif)](https://github.com/tiash-and-cats/nvgif) [![tiash-and-cats/finder](https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Ffinder)](https://github.com/tiash-and-cats/finder) [![PopcornOS/popcorn-os](https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os)](https://github.com/PopcornOS/popcorn-os) [![tiash-and-cats/py0.9.1-win32](https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fpy0.9.1-win32)](https://github.com/tiash-and-cats/py0.9.1-win32)
+<a href="https://github.com/tiash-and-cats/nvgif"><picture>
+  <source 
+    srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif&theme=highcontrast" 
+    media="(forced-colors: active)">
+  <img 
+    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif&theme=default_repocard" 
+    alt="tiash-and-cats/nvgif">
+</picture></a>
+<a href="https://github.com/PopcornOS/popcorn-os"><picture>
+  <source 
+    srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os&theme=highcontrast" 
+    media="(forced-colors: active)">
+  <img 
+    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os&theme=default_repocard" 
+    alt="PopcornOS/popcorn-os">
+</picture></a>
+<a href="https://github.com/tiash-and-cats/finder"><picture>
+  <source 
+    srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Ffinder&theme=highcontrast" 
+    media="(forced-colors: active)">
+  <img 
+    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Ffinder&theme=default_repocard" 
+    alt="tiash-and-cats/finder">
+</picture></a>
+<a href="https://github.com/tiash-and-cats/py0.9.1"><picture>
+  <source 
+    srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fpy0.9.1-win32&theme=highcontrast" 
+    media="(forced-colors: active)">
+  <img 
+    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fpy0.9.1-win32&theme=default_repocard" 
+    alt="tiash-and-cats/py0.9.1-win32">
+</picture></a>
 
 > Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.
 

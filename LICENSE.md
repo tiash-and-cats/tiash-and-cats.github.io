@@ -1,6 +1,6 @@
 # License
 
-> **NOTE:** This license covers my website, also known as "My Website!", "Tiash's website!" or my portfolio. It DOES NOT cover any of my other projects.
+> **NOTE:** This license covers my (Ridwan Bin Mohammad Tiash's) website, also known as my porfolio, "My Website!" or "Tiash's website!". It DOES NOT cover any of my other projects.
 
 ## Code
 

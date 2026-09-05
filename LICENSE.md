@@ -1,5 +1,7 @@
 # License
 
+> **NOTE:** This license covers my website, also known as "My Website!", "Tiash's website!" or my portfolio. It DOES NOT cover any of my other projects.
+
 ## Code
 
 All code is licensed under the MIT license:

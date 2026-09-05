@@ -86,5 +86,12 @@ class MyAge extends HTMLElement {
   }
 }
 
+class Unescaped extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = this.dataset.html;
+  }
+}
+
 customElements.define("fb-acc-countdown", FacebookAccountCountdown);
 customElements.define("my-age", MyAge);
+customElements.define("t-unescaped", Unescaped);

@@ -40,15 +40,15 @@
         top: 0;
       }
 
-      .skip-link.nav {
-        top: 0;
-        left: 0;
+      .gnav-link {
+        position: absolute;
         bottom: -100px;
         right: 0;
+        z-index: 100;
       }
 
       /* Bring the link into view only when a user tabs onto it */
-      .skip-link.nav:focus {
+      .gnav-link:focus {
         bottom: 0;
       }
 
@@ -98,7 +98,7 @@
           <p><img src="https://shields.io/github/last-commit/tiash-and-cats/tiash-and-cats.github.io" alt="Last commit"></p>
         </footer>
       </article>
-      <a class="skip-link nav" href="#navigation">Back to navigation</a>
+      <a class="gnav-link" href="#navigation">Back to navigation</a>
       <!-- end of custom structure -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/5.0.0/anchor.min.js" integrity="sha512-byAcNWVEzFfu+tZItctr+WIMUJvpzT2kokkqcBq+VsrM3OrC5Aj9E2gh+hHpU0XNA3wDmX4sDbV5/nkhvTrj4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

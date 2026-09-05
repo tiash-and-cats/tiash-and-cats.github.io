@@ -32,14 +32,9 @@
         position: absolute;
         top: -100px;
         left: 0;
-        background: #000;
-        color: #fff;
-        padding: 10px 20px;
         z-index: 100;
         text-decoration: none;
-        font-weight: bold;
         border-radius: 0 0 5px 5px;
-        transition: top 0.2s ease-in-out; /* Optional smooth slide-in */
       }
 
       /* Bring the link into view only when a user tabs onto it */
@@ -54,9 +49,8 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <a class="skip-link" href="#content">Skip to main content</a>
-  
     <div class="container-lg px-3 my-5 markdown-body">
+      <a class="skip-link" href="#content">Skip to main content</a>
       <!-- custom default layout structure -->
       <article>
         <header style="margin-bottom: 2rem; border-bottom: 1px solid #e1e4e8; padding-bottom: 1rem;">

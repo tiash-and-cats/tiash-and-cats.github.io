@@ -2,7 +2,7 @@
 
 Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<my-age></my-age> years old) developer. This is my little spot in the web.
 
-I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Raiyan Binte Mohammad Tista)](tista.gif). None of this would be possible without [my mother <img src="mom.jpg" alt="Mom" style="height: 4em;">](https://www.linkedin.com/in/kftrisha/).
+I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Raiyan Binte Mohammad Tista)](tista.gif). None of this would be possible without [<img src="mom.jpg" alt="Mom" style="height: 4em;"> my mother](https://www.linkedin.com/in/kftrisha/).
 
 <picture>
   <source 

@@ -59,8 +59,10 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
     alt="tiash-and-cats/py0.9.1-win32">
 </picture></a>
 
-<t-unescaped data-html="<iframe src='https://scratch.mit.edu/projects/1326533734/embed' style='width: calc(50% - .5ch); aspect-ratio: 32 / 27;'></iframe>"></t-unescaped>
-<t-unescaped data-html="<iframe src='https://scratch.mit.edu/projects/1332738049/embed' style='width: calc(50% - .5ch); aspect-ratio: 32 / 27;'></iframe>"></t-unescaped>
+<div class="scratch-disp">
+<t-unescaped data-html="<iframe src='https://scratch.mit.edu/projects/1326533734/embed'></iframe>"></t-unescaped>
+<t-unescaped data-html="<iframe src='https://scratch.mit.edu/projects/1332738049/embed'></iframe>"></t-unescaped>
+</div>
 
 > Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.
 

@@ -31,5 +31,7 @@ SOFTWARE.
 All text, images, and original written content are not covered by the MIT license and remain All Rights Reserved.
 For avoidance of doubt, this restriction applies to all prose, blog posts, images, and branding assets contained in this repository. The site's layout and styling are considered code and remain under MIT.
 
-[^1]: This is an incorrect term. It is included as to remove any confusion. This website is not a portfolio.
-[^2]: "My" refers to the author, not just any person. It is included as I frequently refer to this website as "my website."
+---
+
+[^1]: This is an incorrect term. It is included as to remove any confusion as some people think this website is a portfolio. It isn't.
+[^2]: "My" refers to me, the author, not just any person. It is included as I frequently refer to this website as "my website."

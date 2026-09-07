@@ -60,8 +60,8 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
 </picture></a>
 
 <div class="scratch-disp">
-<t-unescaped data-html="<iframe src='https://turbowarp.org/1326533734/embed?addons=vol-slider' scrolling='no' allowfullscreen></iframe>"></t-unescaped>
-<t-unescaped data-html="<iframe src='https://turbowarp.org/1332738049/embed?addons=vol-slider' scrolling='no' allowfullscreen></iframe>"></t-unescaped>
+<t-unescaped data-html="<iframe src='https://turbowarp.org/1326533734/embed?addons=vol-slider&fullscreen-background=white' scrolling='no' allowfullscreen></iframe>"></t-unescaped>
+<t-unescaped data-html="<iframe src='https://turbowarp.org/1332738049/embed?addons=vol-slider&fullscreen-background=white' scrolling='no' allowfullscreen></iframe>"></t-unescaped>
 </div>
 
 > Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.

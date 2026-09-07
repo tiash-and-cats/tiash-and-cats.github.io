@@ -1,6 +1,6 @@
 # License
 
-> **NOTE:** This license covers my (Ridwan Bin Mohammad Tiash's) website, also known as my porfolio, "My Website!" or "Tiash's website!". It DOES NOT cover any of my other projects.
+> **NOTE:** This license covers my (Ridwan Bin Mohammad Tiash's) website, also known as my porfolio,[^1] "My Website!"[^2] or "Tiash's website!". It DOES NOT cover any of my other projects.
 
 ## Code
 
@@ -30,3 +30,6 @@ SOFTWARE.
 
 All text, images, and original written content are not covered by the MIT license and remain All Rights Reserved.
 For avoidance of doubt, this restriction applies to all prose, blog posts, images, and branding assets contained in this repository. The site's layout and styling are considered code and remain under MIT.
+
+[^1]: This is an incorrect term. It is included as to remove any confusion. This website is not a portfolio.
+[^2]: "My" refers to the author, not just any person. It is included as I frequently refer to this website as "my website."

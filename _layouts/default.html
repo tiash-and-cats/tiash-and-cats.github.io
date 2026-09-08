@@ -41,7 +41,10 @@
       }
 
       .content h1:first-child { display: none; }
-      .markdown-body { font-family: "Times New Roman"; }
+      .markdown-body { 
+        font-family: "Times New Roman";
+        background-color: #fffe;
+      }
       h1, h2, h3, h4, h5, h6 { font-family: Georgia, Verdana, Tahoma; }
       
       .scratch-disp {
@@ -62,7 +65,23 @@
           flex-direction: column;
         }
       }
+      
+      canvas#bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -9999;
+      }
     </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.185.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.185.1/examples/jsm/",
+        "three/examples/": "https://cdn.jsdelivr.net/npm/three@0.185.1/examples/jsm/"
+      }
+    }
+    </script>
     {% include head-custom.html %}
   </head>
   <body>

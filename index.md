@@ -1,3 +1,7 @@
+---
+layout: index
+---
+
 # Tiash's website!
 
 Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<my-age></my-age> years old) developer. This is my little spot in the web.

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <style>
+      canvas#bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -9999;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.185.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.185.1/examples/jsm/",
+        "three/examples/": "https://cdn.jsdelivr.net/npm/three@0.185.1/examples/jsm/"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <h1>LIPSUM?</h1>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <p>LOREM IPSUM DOLOR SIT AMET, CONSECTUTOR ADELIPSING ELIT</p>
+    <script type="module">
+      import * as THREE from "three";
+      import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+      
+      const loader = new OBJLoader();
+      
+      if (
+        window.matchMedia('(prefers-reduced-motion: true)').matches // user doesn't like motion
+        || window.matchMedia('(forced-colors: active)').matches // forced colors active, won't look good
+      ) {
+        throw new Error("Stop! No need for 3d");
+      }
+      
+      const e = document.createElement("canvas");
+      e.id = "bg";
+      document.body.appendChild(e);
+      
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xffffff);
+
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera.position.y = 5;
+      
+      const renderer = new THREE.WebGLRenderer({ canvas: e });
+      
+      const ring = new THREE.Mesh(
+        new THREE.TorusGeometry(10, 3, 16, 100),
+        new THREE.MeshBasicMaterial({ color: 0xff6347, wireframe: true })
+      );
+      
+      scene.add(ring);
+      scene.add(new THREE.GridHelper(200, 50));
+      
+      let dragon;
+      let teapot;
+      
+      loader.load('teapot.obj', object => {
+        teapot = object;
+      
+        const mat = new THREE.MeshBasicMaterial({
+          color: 0x00ff00,
+          wireframe: true
+        });
+        
+        teapot.traverse(child => {
+          if (child.isMesh) {
+            child.material = mat;
+          }
+        });
+        
+        scene.add(teapot);
+      });
+
+      loader.load('Dragon_80K.obj', object => {
+        dragon = object;
+      
+        const mat = new THREE.MeshBasicMaterial({
+          color: 0x0000ff,
+          wireframe: true
+        });
+        
+        dragon.traverse(child => {
+          if (child.isMesh) {
+            child.scale.setScalar(3.0);
+            child.material = mat;
+          }
+        });
+        
+        scene.add(dragon);
+        
+        dragon.position.z = 30;
+        dragon.position.x = -10;
+      });
+      
+      document.body.onscroll = () => {
+        const t = document.body.getBoundingClientRect().top / Math.max(
+          document.body.scrollHeight, 
+          document.documentElement.scrollHeight,
+          document.body.offsetHeight, 
+          document.documentElement.offsetHeight,
+          document.body.clientHeight, 
+          document.documentElement.clientHeight
+        ) * 20000;
+        
+        dragon.rotation.x += 0.05;
+        dragon.rotation.y += 0.075;
+        dragon.rotation.z += 0.05;
+        
+        teapot.rotation.y += 0.01;
+        teapot.rotation.z += 0.01;
+        
+        camera.position.z = t * -0.01;
+        camera.position.x = t * -0.0002;
+        camera.rotation.y = t * -0.0002;
+      }
+      
+      (function render() {
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        
+        ring.rotation.x += 0.01;
+        ring.rotation.y += 0.005;
+        ring.rotation.z += 0.01;
+
+        renderer.render(scene, camera);
+        
+        console.info("render");
+        
+        requestAnimationFrame(render);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 # I made a code editor using HTML, CSS and JS!
 
 <i>Feb 13, 2024 <small class="edited">edited May 23, 2025</small></i></h2>

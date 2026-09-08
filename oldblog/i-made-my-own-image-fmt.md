@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 # I made my own image format!
 
 <i>Apr 6, 2025</i>

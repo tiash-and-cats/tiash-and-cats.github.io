@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 # I made my own programming language!
 
 <i>Apr 6, 2025</i>

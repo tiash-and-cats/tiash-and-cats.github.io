@@ -1,6 +1,10 @@
+---
+layout: post
+---
+
 # Blog
 
-Suprise! I have a blog now. Here are the posts that there currently are:
+Surprise! I have a blog now. Here are the posts that there currently are:
 
 <ul>
 {% for post in site.posts %}

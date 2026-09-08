@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 # I made my own browser!
 
 <i>May 22, 2025 <small class="edited">edited May 23, 2025</small></i>

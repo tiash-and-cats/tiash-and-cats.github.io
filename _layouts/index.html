@@ -88,12 +88,16 @@ layout: default
       document.documentElement.clientHeight
     ) * 20000;
     
-    dragon?.rotation?.x += 0.05;
-    dragon?.rotation?.y += 0.075;
-    dragon?.rotation?.z += 0.05;
+    if (dragon) {
+      dragon.rotation.x += 0.05;
+      dragon.rotation.y += 0.075;
+      dragon.rotation.z += 0.05;
+    }
     
-    teapot?.rotation?.y += 0.01;
-    teapot?.rotation?.z += 0.01;
+    if (teapot) {
+      teapot.rotation.y += 0.01;
+      teapot.rotation.z += 0.01;
+    }
     
     camera.position.z = t * -0.01;
     camera.position.x = t * -0.0002;

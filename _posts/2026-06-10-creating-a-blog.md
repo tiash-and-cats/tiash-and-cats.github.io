@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Creating a blog
 tags: programming python jekyll github linkedin api secrets
 post2lnkdin: false

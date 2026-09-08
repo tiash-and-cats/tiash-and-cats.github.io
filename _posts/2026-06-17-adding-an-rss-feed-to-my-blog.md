@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Adding an RSS feed to my blog
 tags: programming jekyll rss automation
 post2lnkdin: false

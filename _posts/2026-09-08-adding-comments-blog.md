@@ -2,6 +2,7 @@
 layout: post
 title: Adding a comment section to my blog
 tags: programming github utterances comments
+post2lnkdin: false
 ---
 
 In this post, I explain how I added a comment system to my blog using [Utterances](https://utteranc.es).

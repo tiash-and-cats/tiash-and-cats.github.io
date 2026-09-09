@@ -20,7 +20,7 @@ layout: default
     "imports": {
       "three": "https://cdn.jsdelivr.net/npm/three@0.185.1/build/three.module.js",
       "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.185.1/examples/jsm/",
-      "three/examples/": "https://cdn.jsdelivr.net/npm/three@0.185.1/examples/jsm/"
+      "three/examples/": "https://cdn.jsdelivr.net/npm/three@0.185.1/examples/"
     }
   }
 </script>
@@ -28,8 +28,12 @@ layout: default
 <script type="module">
   import * as THREE from "three";
   import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+  import { STLLoader } from 'three/addons/loaders/STLLoader.js';
   
-  const loader = new OBJLoader();
+  const loader = {
+    obj: new OBJLoader(),
+    stl: new STLLoader()
+  }
   
   if (
     window.matchMedia('(prefers-reduced-motion: reduce)').matches // user doesn't like motion
@@ -58,14 +62,13 @@ layout: default
   scene.add(ring);
   scene.add(new THREE.GridHelper(400, 50));
   
-  let dragon;
-  let teapot;
+  let dragon, teapot, benchy;
   
-  loader.load('teapot.obj', object => {
+  loader.obj.load('/3d/teapot.obj', object => {
     teapot = object;
   
     const mat = new THREE.MeshBasicMaterial({
-      color: 0x00ff00,
+      color: 0x008800,
       wireframe: true
     });
     
@@ -78,11 +81,11 @@ layout: default
     scene.add(teapot);
   });
 
-  loader.load('Dragon_80K.obj', object => {
+  loader.obj.load('/3d/Dragon_80K.obj', object => {
     dragon = object;
   
     const mat = new THREE.MeshBasicMaterial({
-      color: 0x0000ff,
+      color: 0x000088,
       wireframe: true
     });
     
@@ -97,6 +100,22 @@ layout: default
     
     dragon.position.z = 30;
     dragon.position.x = -10;
+  });
+  
+  loader.stl.load('/3d/3DBenchy.stl', geom => {
+    benchy = new THREE.Mesh(
+      geom,
+      new THREE.MeshBasicMaterial({
+        color: 0x777700,
+        wireframe: true
+      })
+    )
+    benchy.scale.setScalar(0.25);
+    
+    scene.add(benchy);
+    
+    benchy.position.z = -30;
+    benchy.position.x = 10;
   });
   
   document.body.onscroll = (function onscroll() {
@@ -138,6 +157,12 @@ layout: default
     ring.rotation.y += 0.005;
     ring.rotation.z += 0.01;
 
+    if (benchy) {
+      benchy.rotation.x += 0.05;
+      benchy.rotation.y += 0.075;
+      benchy.rotation.z += 0.05;
+    }
+
     renderer.render(scene, camera);
     
     console.info("render");
@@ -147,3 +172,6 @@ layout: default
 </script>
 
 {{ content }}
+
+    <!-- <h1>LIPSUM?</h1> -->
+    <!-- <div style="display: inline-block; height: 200vh"></div> -->

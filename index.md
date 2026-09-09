@@ -72,8 +72,6 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
 
 <fb-acc-countdown></fb-acc-countdown>
 
-<t-unescaped data-html='<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7503390589892153344?collapsed=1" height="508" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>' />
-
 ## Why did I get redirected here?
 
 If you got redirected from https://tiashfam.w3spaces.com/, then it's because that was my old website. It has been shut down because: 

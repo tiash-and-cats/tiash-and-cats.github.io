@@ -4,6 +4,19 @@ layout: default
 
 {{ content }}
 
+<style>
+  .markdown-body {
+    background-color: #fffa;
+  }
+
+  canvas#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+  }
+</style>
+
 <script type="module">
   import * as THREE from "three";
   import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';

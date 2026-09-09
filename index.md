@@ -8,6 +8,8 @@ Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tia
 
 I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Raiyan Binte Mohammad Tista)](tista.gif). None of this would be possible without [<img src="mom.jpg" alt="Mom" style="height: 4em;"> my mother](https://www.linkedin.com/in/kftrisha/).
 
+<t-unescaped data-html='<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7503390589892153344?collapsed=1" height="508" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>' />
+
 <picture>
   <source 
     srcset="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=highcontrast" 

@@ -33,7 +33,7 @@ layout: default
   const loader = {
     obj: new OBJLoader(),
     stl: new STLLoader()
-  }
+  };
   
   if (
     window.matchMedia('(prefers-reduced-motion: reduce)').matches // user doesn't like motion
@@ -64,6 +64,7 @@ layout: default
   
   let dragon, teapot, benchy;
   
+  // Utah/Newell teapot
   loader.obj.load('/3d/teapot.obj', object => {
     teapot = object;
   
@@ -81,6 +82,7 @@ layout: default
     scene.add(teapot);
   });
 
+  // Stanford dragon
   loader.obj.load('/3d/Dragon_80K.obj', object => {
     dragon = object;
   
@@ -102,6 +104,7 @@ layout: default
     dragon.position.x = -10;
   });
   
+  // #3DBenchy!
   loader.stl.load('/3d/3DBenchy.stl', geom => {
     benchy = new THREE.Mesh(
       geom,

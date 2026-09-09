@@ -2,6 +2,7 @@
 layout: post
 title: Moving my blog comments to Giscus
 tags: programming github giscus comments
+post2lnkdin: false
 ---
 
 In my last post, I explained how I added a comment system to my blog using [Utterances](https://utteranc.es). It worked well: lightweight, simple, and tied directly to GitHub Issues. But I've now switched to [Giscus](https://giscus.app).

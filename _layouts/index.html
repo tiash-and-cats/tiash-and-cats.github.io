@@ -93,7 +93,7 @@ layout: default
     
     dragon.traverse(child => {
       if (child.isMesh) {
-        child.scale.setScalar(3.0);
+        child.scale.setScalar(10.0);
         child.material = mat;
       }
     });
@@ -176,5 +176,7 @@ layout: default
 
 {{ content }}
 
-    <!-- <h1>LIPSUM?</h1> -->
-    <!-- <div style="display: inline-block; height: 200vh"></div> -->
+{% comment %} <!-- Jekyll will interpret this, but the browser won't, so this testing code will only show up in a browser! -->
+  <h1>LIPSUM?</h1>
+  <div style="display: inline-block; height: 200vh"></div>
+{% endcomment %}

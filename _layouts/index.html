@@ -30,10 +30,14 @@ layout: default
   import * as THREE from "three/webgpu";
   import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
   import { STLLoader } from 'three/addons/loaders/STLLoader.js';
+  import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
   
   const loader = {
     obj: new OBJLoader(),
-    stl: new STLLoader()
+    stl: new STLLoader(),
+    ply: new PLYLoader(),
+    
+    [null]: null
   };
   
   if (
@@ -66,7 +70,7 @@ layout: default
     scene.add(ring);
     scene.add(new THREE.GridHelper(800, 50));
     
-    let dragon, teapot, benchy;
+    let dragon, teapot, benchy, bunny;
     
     // Utah/Newell teapot
     loader.obj.load('/3d/teapot.obj', object => {
@@ -123,6 +127,27 @@ layout: default
       
       benchy.position.z = -30;
       benchy.position.x = 10;
+    });
+
+    // Stanford bunny
+    loader.ply.load('/3d/bun_zipper_res4.ply', geom => {
+      geom.computeVertexNormals(); 
+    
+      bunny = new THREE.Mesh(
+        geom,
+        new THREE.MeshBasicMaterial({
+          color: 0xff00ff,
+          wireframe: true
+        })
+      )
+      bunny.scale.setScalar(200);
+      
+      scene.add(bunny);
+      
+      bunny.position.z = 60;
+      bunny.position.x = -30;
+      bunny.position.y = -12.5;
+      bunny.rotation.y = Math.PI * 1.5;
     });
     
     document.body.onscroll = (function onscroll() {

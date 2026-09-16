@@ -21,7 +21,8 @@ layout: default
       "three": "/assets/vendor/threejs/build/three.module.js",
       "three/webgpu": "/assets/vendor/threejs/build/three.webgpu.js",
       "three/addons/": "/assets/vendor/threejs/examples/jsm/",
-      "three/examples/": "/assets/vendor/threejs/examples/"
+      "three/examples/": "/assets/vendor/threejs/examples/",
+      "@pmndrs/detect-gpu": "/assets/vendor/@pmndrs/detect-gpu/dist/index.mjs"
     }
   }
 </script>
@@ -31,6 +32,8 @@ layout: default
   import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
   import { STLLoader } from 'three/addons/loaders/STLLoader.js';
   import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
+  
+  import { getGPUTier } from '@pmndrs/detect-gpu';
   
   const loader = {
     obj: new OBJLoader(),
@@ -59,149 +62,161 @@ layout: default
   
   const renderer = new THREE.WebGPURenderer({ canvas: e, antialias: true });
   
-  renderer.init().then(() => {
-    console.log("Using WebGPU?", renderer.backend.isWebGPUBackend);
+  await renderer.init();
+  console.log("Using WebGPU?", renderer.backend.isWebGPUBackend);
+
+  const gpuTier = await getGPUTier();
+  console.log("gpu", gpuTier);
+
+  const ring = new THREE.Mesh(
+    new THREE.TorusGeometry(10, 3, 16, 100),
+    new THREE.MeshBasicMaterial({ color: 0xff6347, wireframe: true })
+  );
   
-    const ring = new THREE.Mesh(
-      new THREE.TorusGeometry(10, 3, 16, 100),
-      new THREE.MeshBasicMaterial({ color: 0xff6347, wireframe: true })
-    );
-    
-    scene.add(ring);
-    scene.add(new THREE.GridHelper(800, 50));
-    
-    let dragon, teapot, benchy, bunny;
-    
-    // Utah/Newell teapot
-    loader.obj.load('/3d/teapot.obj', object => {
-      teapot = object;
-    
-      const mat = new THREE.MeshBasicMaterial({
-        color: 0x008800,
-        wireframe: true
-      });
-      
-      teapot.traverse(child => {
-        if (child.isMesh) {
-          child.material = mat;
-        }
-      });
-      
-      scene.add(teapot);
-    });
-
-    // Stanford dragon
-    loader.obj.load('/3d/Dragon_80K.obj', object => {
-      dragon = object;
-    
-      const mat = new THREE.MeshBasicMaterial({
-        color: 0x000088,
-        wireframe: true
-      });
-      
-      dragon.traverse(child => {
-        if (child.isMesh) {
-          child.scale.setScalar(10.0);
-          child.material = mat;
-        }
-      });
-      
-      scene.add(dragon);
-      
-      dragon.position.z = 30;
-      dragon.position.x = -10;
+  scene.add(ring);
+  scene.add(new THREE.GridHelper(800, 50));
+  
+  let dragon, teapot, benchy, bunny;
+  
+  // Utah/Newell teapot
+  loader.obj.load('/3d/teapot.obj', object => {
+    teapot = object;
+  
+    const mat = new THREE.MeshBasicMaterial({
+      color: 0x008800,
+      wireframe: true
     });
     
-    // #3DBenchy!
-    loader.stl.load('/3d/3DBenchy.stl', geom => {
-      benchy = new THREE.Mesh(
-        geom,
-        new THREE.MeshBasicMaterial({
-          color: 0x777700,
-          wireframe: true
-        })
-      )
-      benchy.scale.setScalar(0.25);
-      
-      scene.add(benchy);
-      
-      benchy.position.z = -30;
-      benchy.position.x = 10;
-    });
-
-    // Stanford bunny
-    loader.ply.load('/3d/bun_zipper_res4.ply', geom => {
-      geom.computeVertexNormals(); 
-    
-      bunny = new THREE.Mesh(
-        geom,
-        new THREE.MeshBasicMaterial({
-          color: 0xff00ff,
-          wireframe: true
-        })
-      )
-      bunny.scale.setScalar(200);
-      
-      scene.add(bunny);
-      
-      bunny.position.z = 60;
-      bunny.position.x = -30;
-      bunny.position.y = -12.5;
-      bunny.rotation.y = Math.PI * 1.5;
-    });
-    
-    document.body.onscroll = (function onscroll() {
-      const t = document.body.getBoundingClientRect().top / Math.max(
-        document.body.scrollHeight, 
-        document.documentElement.scrollHeight,
-        document.body.offsetHeight, 
-        document.documentElement.offsetHeight,
-        document.body.clientHeight, 
-        document.documentElement.clientHeight
-      ) * 20000;
-      
-      if (dragon) {
-        dragon.rotation.x += 0.05;
-        dragon.rotation.y += 0.075;
-        dragon.rotation.z += 0.05;
+    teapot.traverse(child => {
+      if (child.isMesh) {
+        child.material = mat;
       }
-      
-      if (teapot) {
-        teapot.rotation.y += 0.01;
-        teapot.rotation.z += 0.01;
-      }
-      
-      camera.position.z = t * -0.01;
-      camera.position.x = t * -0.0002;
-      camera.rotation.y = t * -0.0002;
-      
-      return onscroll;
-    })();
+    });
     
-    (function render() {
-      renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      
-      ring.rotation.x += 0.01;
-      ring.rotation.y += 0.005;
-      ring.rotation.z += 0.01;
-
-      if (benchy) {
-        benchy.rotation.x += 0.05;
-        benchy.rotation.y += 0.075;
-        benchy.rotation.z += 0.05;
-      }
-
-      renderer.render(scene, camera);
-      
-      console.info("render");
-      
-      requestAnimationFrame(render);
-    })();
+    scene.add(teapot);
   });
+
+  // Stanford dragon
+  loader.obj.load('/3d/Dragon_80K.obj', object => {
+    dragon = object;
+  
+    const mat = new THREE.MeshBasicMaterial({
+      color: 0x000088,
+      wireframe: true
+    });
+    
+    dragon.traverse(child => {
+      if (child.isMesh) {
+        child.scale.setScalar(10.0);
+        child.material = mat;
+      }
+    });
+    
+    scene.add(dragon);
+    
+    dragon.position.z = 30;
+    dragon.position.x = -10;
+  });
+  
+  // #3DBenchy!
+  loader.stl.load('/3d/3DBenchy.stl', geom => {
+    benchy = new THREE.Mesh(
+      geom,
+      new THREE.MeshBasicMaterial({
+        color: 0x777700,
+        wireframe: true
+      })
+    )
+    benchy.scale.setScalar(0.25);
+    
+    scene.add(benchy);
+    
+    benchy.position.z = -30;
+    benchy.position.x = 10;
+  });
+
+  // Stanford bunny
+  loader.ply.load('/3d/bun_zipper_res4.ply', geom => {
+    geom.computeVertexNormals(); 
+  
+    bunny = new THREE.Mesh(
+      geom,
+      new THREE.MeshBasicMaterial({
+        color: 0xff00ff,
+        wireframe: true
+      })
+    )
+    bunny.scale.setScalar(200);
+    
+    scene.add(bunny);
+    
+    bunny.position.z = 60;
+    bunny.position.x = -30;
+    bunny.position.y = -12.5;
+    bunny.rotation.y = Math.PI * 1.5;
+  });
+  
+  document.body.onscroll = (function onscroll() {
+    const t = document.body.getBoundingClientRect().top / Math.max(
+      document.body.scrollHeight, 
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight, 
+      document.documentElement.offsetHeight,
+      document.body.clientHeight, 
+      document.documentElement.clientHeight
+    ) * 20000;
+    
+    if (dragon) {
+      dragon.rotation.x += 0.05;
+      dragon.rotation.y += 0.075;
+      dragon.rotation.z += 0.05;
+    }
+    
+    if (teapot) {
+      teapot.rotation.y += 0.01;
+      teapot.rotation.z += 0.01;
+    }
+    
+    camera.position.z = t * -0.01;
+    camera.position.x = t * -0.0002;
+    camera.rotation.y = t * -0.0002;
+    
+    return onscroll;
+  })();
+  
+  let frame = 0;
+  
+  (function render() {
+    frame++;
+  
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    
+    ring.rotation.x += 0.01;
+    ring.rotation.y += 0.005;
+    ring.rotation.z += 0.01;
+
+    if (benchy) {
+      benchy.rotation.x += 0.05;
+      benchy.rotation.y += 0.075;
+      benchy.rotation.z += 0.05;
+    }
+
+    if (gpuTier.tier < 3 && gpuTier.isMobile && frame % 2 != 0) {
+      // website extremely laggy on my tablet, rendering every other frame
+      // SHOULD reduce the load on the GPU
+      return requestAnimationFrame(render);
+    }
+
+    renderer.render(scene, camera);
+    
+    console.info("render");
+    
+    requestAnimationFrame(render);
+  })();
 </script>
 
 {{ content }}

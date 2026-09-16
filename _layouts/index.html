@@ -65,7 +65,9 @@ layout: default
   await renderer.init();
   console.log("Using WebGPU?", renderer.backend.isWebGPUBackend);
 
-  const gpuTier = await getGPUTier();
+  const gpuTier = await getGPUTier({
+    benchmarksURL: "/assets/vendor/@pmndrs/detect-gpu/dist/benchmarks"
+  });
   console.log("gpu", gpuTier);
 
   const ring = new THREE.Mesh(

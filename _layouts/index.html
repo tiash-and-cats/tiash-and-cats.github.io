@@ -207,7 +207,7 @@ layout: default
       benchy.rotation.z += 0.05;
     }
 
-    if (gpuTier.tier < 3 && gpuTier.isMobile && frame % 2 != 0) {
+    if (gpuTier.tier < 3 && gpuTier.isMobile && (frame % 2 == 0 || frame % 3 == 0)) {
       // website extremely laggy on my tablet, rendering every other frame
       // SHOULD reduce the load on the GPU
       return requestAnimationFrame(render);

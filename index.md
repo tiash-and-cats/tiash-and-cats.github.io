@@ -13,7 +13,7 @@ I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Ra
     srcset="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
-    src="https://github-stats-extended.vercel.app/api?username=tiash-and-cats&include_all_commits=true&theme=default_repocard" 
+    src="https://doodlebug.tarinagarwal.in/api/card/stats?username=tiash-and-cats" 
     alt="My GitHub stats">
 </picture>
 
@@ -22,7 +22,7 @@ I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Ra
     srcset="https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=highcontrast&layout=compact" 
     media="(forced-colors: active)">
   <img 
-    src="https://github-stats-extended.vercel.app/api/top-langs?username=tiash-and-cats&langs_count=4&theme=default_repocard&layout=compact" 
+    src="https://doodlebug.tarinagarwal.in/api/card/langs?username=tiash-and-cats" 
     alt="My most used languages">
 </picture>
 
@@ -34,7 +34,7 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
-    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fnvgif&theme=default_repocard" 
+    src="https://doodlebug.tarinagarwal.in/api/card/repo?username=tiash-and-cats&repo=nvgif" 
     alt="tiash-and-cats/nvgif">
 </picture>
 </a>
@@ -43,7 +43,7 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
-    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os&theme=default_repocard" 
+    src="https://doodlebug.tarinagarwal.in/api/card/repo?username=PopcornOS&repo=popcorn-os" 
     alt="PopcornOS/popcorn-os">
 </picture></a>
 <a href="https://github.com/tiash-and-cats/finder"><picture>
@@ -51,7 +51,7 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Ffinder&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
-    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Ffinder&theme=default_repocard" 
+    src="https://doodlebug.tarinagarwal.in/api/card/repo?username=tiash-and-cats&repo=finder" 
     alt="tiash-and-cats/finder">
 </picture></a>
 <a href="https://github.com/tiash-and-cats/py0.9.1"><picture>
@@ -59,7 +59,7 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fpy0.9.1-win32&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
-    src="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fpy0.9.1-win32&theme=default_repocard" 
+    src="https://doodlebug.tarinagarwal.in/api/card/repo?username=tiash-and-cats&repo=py0.9.1-win32" 
     alt="tiash-and-cats/py0.9.1-win32">
 </picture></a>
 

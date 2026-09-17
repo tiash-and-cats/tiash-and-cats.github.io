@@ -45,17 +45,23 @@ layout: default
   
   if (
     window.matchMedia('(prefers-reduced-motion: reduce)').matches // user doesn't like motion
-    || window.matchMedia('(forced-colors: active)').matches // forced colors active, won't look good
   ) {
     throw new Error("Stop! No need for 3d");
   }
+  
+  const palette = window.matchMedia('(forced-colors: active)').matches
+    ? { dragon: 0xff0000, teapot: 0xffffff, benchy: 0xffff00, bunny: 0x00ffff, ring: 0x00ff00 }
+    : { dragon: 0x000088, teapot: 0x008800, benchy: 0x777700, bunny: 0xff00ff, ring: 0xff6347 };
   
   const e = document.createElement("canvas");
   e.id = "bg";
   document.body.appendChild(e);
   
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xffffff);
+  
+  if (!window.matchMedia('(forced-colors: active)').matches) {
+    scene.background = new THREE.Color(0xffffff);
+  }
 
   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
   camera.position.y = 5;
@@ -72,7 +78,7 @@ layout: default
 
   const ring = new THREE.Mesh(
     new THREE.TorusGeometry(10, 3, 16, 100),
-    new THREE.MeshBasicMaterial({ color: 0xff6347, wireframe: true })
+    new THREE.MeshBasicMaterial({ color: palette.ring, wireframe: true })
   );
   
   scene.add(ring);
@@ -85,7 +91,7 @@ layout: default
     teapot = object;
   
     const mat = new THREE.MeshBasicMaterial({
-      color: 0x008800,
+      color: palette.teapot,
       wireframe: true
     });
     
@@ -103,7 +109,7 @@ layout: default
     dragon = object;
   
     const mat = new THREE.MeshBasicMaterial({
-      color: 0x000088,
+      color: palette.dragon,
       wireframe: true
     });
     
@@ -125,7 +131,7 @@ layout: default
     benchy = new THREE.Mesh(
       geom,
       new THREE.MeshBasicMaterial({
-        color: 0x777700,
+        color: palette.benchy,
         wireframe: true
       })
     )
@@ -144,7 +150,7 @@ layout: default
     bunny = new THREE.Mesh(
       geom,
       new THREE.MeshBasicMaterial({
-        color: 0xff00ff,
+        color: palette.bunny,
         wireframe: true
       })
     )

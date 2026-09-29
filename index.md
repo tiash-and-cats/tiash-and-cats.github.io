@@ -4,6 +4,8 @@ layout: index
 
 # Tiash's website!
 
+> STUDENTS OF SUMMERFIELD WHO WERE IN CLASS 5 BEFORE 2026! [Remember Bembem miss?](#students-of-summerfield)
+
 Hello, I'm Ridwan Bin Mohammad. Please don't call me Ridwan, instead call me Tiash. I'm a young (<my-age></my-age> years old) developer. This is my little spot in the web.
 
 I also have [a sister <img src="tista.gif" alt="Tista" style="height: 4em;"> (Raiyan Binte Mohammad Tista)](tista.gif). None of this would be possible without [<img src="mom.jpg" alt="Mom" style="height: 4em;"> my mother](https://www.linkedin.com/in/kftrisha/).
@@ -84,10 +86,10 @@ Did you know a teacher named Bembem Miss? You probably do if you were in class 5
 
 Our beloved Bembem Miss is sadly in the ICU for a rare neurological disorder (Miller Fisher Syndrome (GBS)). Any help is wholly appreciated. This is coming from the keyboard of one of her students. As I can't easily donate, I'm doing my part by sharing awareness.
 
-- [GoFundMe](https://www.gofundme.com/f/help-bem-fight-miller-fisher-syndrome-gbs)
+- [GoFundMe](https://gofund.me/5b0045e76)
 - Screenshots of the Facebook post (I couldn't get the link due to the above Facebook problem)
-  - [here](bembem-post-1.jpg) 
-  - [here](bembem-post-2.jpg) 
+  - [here](bembem-post-1.jpg)
+  - [here](bembem-post-2.jpg)
 
 ## Why did I get redirected here?
 

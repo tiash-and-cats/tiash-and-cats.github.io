@@ -38,30 +38,36 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
     alt="tiash-and-cats/nvgif">
 </picture>
 </a>
-<a href="https://github.com/PopcornOS/popcorn-os"><picture>
+<a href="https://github.com/PopcornOS/popcorn-os">
+<picture>
   <source 
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=PopcornOS%2Fpopcorn-os&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
     src="https://doodlebug.tarinagarwal.in/api/card/repo?username=PopcornOS&repo=popcorn-os" 
     alt="PopcornOS/popcorn-os">
-</picture></a>
-<a href="https://github.com/tiash-and-cats/finder"><picture>
+</picture>
+</a>
+<a href="https://github.com/tiash-and-cats/finder">
+<picture>
   <source 
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Ffinder&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
     src="https://doodlebug.tarinagarwal.in/api/card/repo?username=tiash-and-cats&repo=finder" 
     alt="tiash-and-cats/finder">
-</picture></a>
-<a href="https://github.com/tiash-and-cats/py0.9.1"><picture>
+</picture>
+</a>
+<a href="https://github.com/tiash-and-cats/py0.9.1">
+<picture>
   <source 
     srcset="https://github-stats-extended.vercel.app/api/pin?username=tiash-and-cats&repo=tiash-and-cats%2Fpy0.9.1-win32&theme=highcontrast" 
     media="(forced-colors: active)">
   <img 
     src="https://doodlebug.tarinagarwal.in/api/card/repo?username=tiash-and-cats&repo=py0.9.1-win32" 
     alt="tiash-and-cats/py0.9.1-win32">
-</picture></a>
+</picture>
+</a>
 
 <div class="scratch-disp">
 <t-unescaped data-html="<iframe src='https://turbowarp.org/1326533734/embed?addons=vol-slider&fullscreen-background=white' scrolling='no' allowfullscreen></iframe>"></t-unescaped>

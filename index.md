@@ -78,6 +78,15 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
 
 <fb-acc-countdown></fb-acc-countdown>
 
+## STUDENTS OF SUMMERFIELD!
+
+Did you know a teacher named Bembem Miss? You probably do if you were in class 5 between  Our beloved Bembem Miss is sadly in the ICU for a rare neurological disorder (Miller Fisher Syndrome (GBS)). Any help is wholly appreciated. This is coming from the keyboard of one of her students. As I can't easily donate, I'm doing my part by sharing awareness.
+
+- [GoFundMe](https://www.gofundme.com/f/help-bem-fight-miller-fisher-syndrome-gbs)
+- Screenshots of the Facebook post (I couldn't get the link due to the above Facebook problem)
+  - [here](bembem-post-1.jpg) 
+  - [here](bembem-post-2.jpg) 
+
 ## Why did I get redirected here?
 
 If you got redirected from https://tiashfam.w3spaces.com/, then it's because that was my old website. It has been shut down because: 

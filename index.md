@@ -120,9 +120,11 @@ Our beloved Bembem Miss is sadly in the ICU for a rare neurological disorder (Mi
   > 
   > ❤️ Please donate. Please share. Please keep her in your thoughts and prayers.
   > Every contribution is a step towards hope. 🙏❤️
-  > \#HelpHerRecover \#GuillainBarreSyndrome \#Fundraising \#SupportHerJourney \#EarlyChildhoodTeacher \#CommunitySupport \#Hope #PleaseDonate
+  > \#HelpHerRecover \#GuillainBarreSyndrome \#Fundraising \#SupportHerJourney \#EarlyChildhoodTeacher \#CommunitySupport \#Hope \#PleaseDonate
   > 
   > https://gofund.me/d6117df44
+
+With the help of the community, she will, inshallah, be better.
 
 ## Why did I get redirected here?
 

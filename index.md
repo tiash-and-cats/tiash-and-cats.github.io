@@ -90,6 +90,39 @@ Our beloved Bembem Miss is sadly in the ICU for a rare neurological disorder (Mi
 - Screenshots of the Facebook post (I couldn't get the link due to the above Facebook problem)
   - [here](bembem-post-1.jpg)
   - [here](bembem-post-2.jpg)
+- Text of the Facebook post
+  > 💔 A Young Dream Shattered in a Moment — Please Help Us Give Her Hope Again 🙏
+  > 
+  > \*\*\*Go fund me link to donate https://gofund.me/d6117df44
+  > 
+  > Donation details from Bangladesh: 
+  > 
+  > Bank: Eastern Bank Limited
+  > Account no: 0081250063889
+  > Account name: ANUP DEWAN & RAKESH DEWAN
+  > Branch name: Panchlaish
+  > 
+  > bKash: 01819883494
+  > Name: Anup Dewan
+  > 
+  > \*\*\*\*\*\*\*\*\*\*\*
+  > 
+  > Bembem is a bright and determined young student who left her family in Bangladesh and came to Australia with a dream — to build a better future and become an Early Childhood Teacher, a profession she was passionate about as she wanted to make a difference in little children’s lives. 
+  > But she was suddenly struck by Guillain-Barré Syndrome (GBS), a rare and serious autoimmune neurological condition. Her condition deteriorated rapidly, and she was admitted to the ICU, where she became paralysed and lost the ability to move and experience her senses normally.
+  > A young woman who came to Australia full of dreams is now fighting a battle no one could have imagined.
+  > Her family is facing enormous emotional and financial pressure as they stand beside her through this devastating journey. Her, rehabilitation and ongoing support will require significant financial resources. She will not be able to earn her living for uncertain period of time until she fully regains her ability to even walk. 
+  > 🙏 We are reaching out to all of you for help.
+  > Every donation, no matter how small, can make a meaningful difference — helping with her, rehabilitation, accommodation, travel and the many costs her family is now facing.
+  > 
+  > If you are unable to donate, please share this post. Your share could reach someone who can help.
+  > 
+  > Let’s come together and give this young student the support she needs to keep fighting, recover and one day return to the life she dreamed of.
+  > 
+  > ❤️ Please donate. Please share. Please keep her in your thoughts and prayers.
+  > Every contribution is a step towards hope. 🙏❤️
+  > \#HelpHerRecover \#GuillainBarreSyndrome \#Fundraising \#SupportHerJourney \#EarlyChildhoodTeacher \#CommunitySupport \#Hope #PleaseDonate
+  > 
+  > https://gofund.me/d6117df44
 
 ## Why did I get redirected here?
 

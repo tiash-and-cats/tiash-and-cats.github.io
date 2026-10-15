@@ -33,7 +33,9 @@ def fix_font_metadata(file_path, is_bold=False):
         3: unique_id,       # Unique ID
         4: full_name,       # Full Name
         5: VERSION_STRING,  # Font Version
-        6: ps_name          # PostScript Name
+        6: ps_name,         # PostScript Name
+        16: family_name,    # Preferred Family (Set to "Untitled")
+        17: subfamily       # Preferred Style (Set to "Regular" or "Bold")
     }
     
     for name_id, text_value in target_strings.items():

@@ -1,3 +1,11 @@
 User-Agent: *
 Disallow: 
 Sitemap: https://tiash.is-cool.dev/sitemap.txt
+
+User-Agent: OAI-SearchBot
+User-Agent: PerplexityBot
+User-Agent: ClaudeBot
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.webp$
+Disallow: /*.gif$

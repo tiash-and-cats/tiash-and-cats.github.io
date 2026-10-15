@@ -77,6 +77,7 @@ I have many [projects](https://www.linkedin.com/in/rbm-tiash/details/projects/),
 </div>
 
 > Check out [my new project](/py0.9.1-win32/) on porting Python 0.9.1 to Windows and publishing the docs online.
+> Also check out my [custom bitmap font](/untitled/).
 
 <fb-acc-countdown></fb-acc-countdown>
 

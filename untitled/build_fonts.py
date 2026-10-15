@@ -43,6 +43,17 @@ def fix_font_metadata(file_path, is_bold=False):
 
     os2_table = font['OS/2']
     head_table = font['head']
+
+    os2_table.panose.bFamilyType = 2       # Latin: Text and Display
+    os2_table.panose.bSerifStyle = 11      # Normal Sans
+    os2_table.panose.bWeight = 8 if is_bold else 5  # Bold (8) vs Book/Regular (5)
+    os2_table.panose.bProportion = 1       # No Fit
+    os2_table.panose.bContrast = 1         # No Fit
+    os2_table.panose.bStrokeVariation = 1  # No Fit
+    os2_table.panose.bArmStyle = 1         # No Fit
+    os2_table.panose.bLetterForm = 1       # No Fit
+    os2_table.panose.bMidline = 1          # No Fit
+    os2_table.panose.bXHeight = 1          # No Fit
     
     # Keep the font's internal revision number synchronized if it's a decimal
     try:

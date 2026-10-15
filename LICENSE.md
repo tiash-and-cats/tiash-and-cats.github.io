@@ -31,6 +31,10 @@ SOFTWARE.
 All text, images, and original written content are not covered by the MIT license and remain All Rights Reserved.
 For avoidance of doubt, this restriction applies to all prose, blog posts, images, and branding assets contained in this repository. The site's layout and styling are considered code and remain under MIT.
 
+## Miscellaneous
+
+- [The Untitled typeface is not licensed under MIT, but rather the OFL.](/untitled/untitled_license.md)
+
 ---
 
 [^1]: This is an incorrect term. It is included as to remove any confusion as some people think this website is a portfolio. It isn't.

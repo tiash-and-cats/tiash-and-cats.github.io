@@ -1,11 +1,8 @@
-# License
-
-> **NOTE:** This license covers my (Ridwan Bin Mohammad Tiash's) website, also known as my portfolio,[^1] "My Website!"[^2] or "Tiash's website!". It DOES NOT cover any of my other projects.
-
 ## Code
 
 All code is licensed under the MIT license:
 
+```
 Copyright (c) 2026 Ridwan Bin Mohammad Tiash
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,17 +22,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
 
 ## Content
 
 All text, images, and original written content are not covered by the MIT license and remain All Rights Reserved.
 For avoidance of doubt, this restriction applies to all prose, blog posts, images, and branding assets contained in this repository. The site's layout and styling are considered code and remain under MIT.
-
-## Miscellaneous
-
-- [The Untitled typeface is not licensed under MIT, but rather the OFL.](/untitled/untitled_license.md)
-
----
-
-[^1]: This is an incorrect term. It is included as to remove any confusion as some people think this website is a portfolio. It isn't.
-[^2]: "My" refers to me, the author, not just any person. It is included as I frequently refer to this website as "my website."

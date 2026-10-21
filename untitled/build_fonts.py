@@ -46,8 +46,6 @@ def trace_character_to_pen(cell, char_w, char_h, pixel_scale):
             r, g, b, a = cell.getpixel((x, y))[:4]
             is_solid = (r < 128 and g < 128 and b < 128)
             
-            print("@" if is_solid else " ", end="")
-            
             if is_solid and not in_span:
                 in_span = True
                 span_start = x
@@ -62,8 +60,6 @@ def trace_character_to_pen(cell, char_w, char_h, pixel_scale):
                 pen.lineTo((ttf_x1, ttf_y2))
                 pen.closePath()
                 in_span = False
-        
-        print()
                 
         if in_span:
             ttf_x1 = span_start * pixel_scale
@@ -75,13 +71,9 @@ def trace_character_to_pen(cell, char_w, char_h, pixel_scale):
             pen.lineTo((ttf_x1, ttf_y2))
             pen.closePath()
             
-    print("---------------------------------------")
     return pen.glyph()
 
 def generate_vector_font_object(spritesheet_path, is_bold=False):
-    """
-    Processes the strict 3x36 spritesheet grid into clean vector font components.
-    """
     if not os.path.exists(spritesheet_path):
         print(f"Error: Spritesheet path missing: {spritesheet_path}")
         sys.exit(1)
@@ -144,24 +136,34 @@ def generate_vector_font_object(spritesheet_path, is_bold=False):
     return fb.font
 
 def fix_font_metadata(font, is_bold=False):
-    """
-    Forces your explicit FontForge window metadata variables onto the final tables.
-    """
     name_table = font['name']
     family_name = "Untitled"
     subfamily = "Bold" if is_bold else "Regular"
     ps_name = f"{family_name}{subfamily}"
     full_name = f"{family_name} {subfamily}"
     unique_id = f": {family_name} {subfamily}"
+    copyright_string = (
+        "Copyright (c) 2026, Ridwan Bin Mohammad Tiash "
+        "(https://tiash.is-cool.dev), with Reserved Font Name Untitled."
+    )
+    license_description = (
+        "This Font Software is licensed under the SIL Open Font License, "
+        "Version 1.1. This license is available with a FAQ at: "
+        "https://openfontlicense.org"
+    )
+    license_url = "https://openfontlicense.org"
     
     # 2. MATCH IMAGE 1 & IMAGE 2 (TTF Names Map)
     target_strings = {
-        0: "",                                # Copyright (Left Empty)
+        0: copyright_string,                  # Copyright Notice
         1: family_name,                       # Family Name
         2: subfamily,                         # Subfamily Name
         3: unique_id,                         # Unique ID
         4: full_name,                         # Full Name
         5: VERSION_STRING,                    # Font Version string ("Version 1.1")
+        6: ps_name,                           # PostScript Name
+        13: license_description,              # License Description Field
+        14: license_url,                      # License Info URL
         16: family_name,                      # Preferred Family Name
         17: subfamily                         # Preferred Style Name
     }

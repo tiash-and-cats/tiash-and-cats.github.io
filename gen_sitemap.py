@@ -205,6 +205,8 @@ def seed_from_build():
     discovered = set()
 
     for page in SITE_DIR.rglob("*.html"):
+        log("reading", page)
+        
         page_url = normalize_url(
             file_to_url(page)
         )

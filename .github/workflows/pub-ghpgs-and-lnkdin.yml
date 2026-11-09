@@ -41,7 +41,7 @@ jobs:
                   destination: ./_site
               
             - name: Generate sitemap
-              run: python gen_sitemap.py > _site/sitemap.txt
+              run: python gen_sitemap.py | sudo tee _site/sitemap.txt
                   
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
